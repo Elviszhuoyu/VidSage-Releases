@@ -12,13 +12,13 @@ body:
     id: version
     attributes:
       label: VidSage 版本 / Version
-      placeholder: "例如 / e.g. 0.1.77"
+      placeholder: "例如 / e.g. 0.1.80"
     validations:
       required: true
   - type: textarea
     id: problem
     attributes:
-      label: 发生了什么 / What happened?
+      label: 问题描述 / Problem description
       description: 写清操作步骤、预期结果和实际结果 / Steps, expected result, and actual result
       placeholder: |
         1. 打开了什么 / What I opened:
@@ -30,7 +30,7 @@ body:
   - type: textarea
     id: environment
     attributes:
-      label: 环境与发生时间 / Environment and time
+      label: 电脑配置与发生时间 / Computer details and time
       description: 可选。Windows版本、CPU/内存/显卡、所选模型、视频时长或平台；不要填硬件序列号 / Optional system details, model, duration or platform; no hardware serial numbers
   - type: textarea
     id: evidence

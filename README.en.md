@@ -10,7 +10,7 @@
 
 The app currently has a **Simplified Chinese interface**. English documentation is available; an English interface is planned for a later version.
 
-## Why I built VidSage
+## How VidSage started
 
 I started working on it while studying finance and other subjects through video courses. Often, the video had moved on while I was still trying to understand the previous idea.
 
@@ -20,20 +20,20 @@ That is where VidSage began. I hope it makes learning a little easier for you, t
 
 ![VidSage home and optional setup guide](docs/assets/release/home.png)
 
-## A workspace for understanding video
+## Features
 
 - Use platform subtitles, import a subtitle file, or generate captions locally.
 - Analyze and ask questions about subtitles, then return to the video through timestamps.
 - Save notes and analysis as material you can revisit and search.
 - Choose an API, ChatGPT cloud authorization, or a supported local service. Media sign-in is optional; local playback needs no AI account.
 
-The home screen starts clear. An optional four-step guide helps prepare services and subtitles. Settings use four categories: AI services, Media accounts, Subtitles, and Player.
+An optional setup guide at the top right helps you configure services and captions. You can skip it and start watching.
 
 ![Compact settings navigation](docs/assets/release/settings.png)
 
-## Will it work on my computer?
+## System requirements
 
-This release targets **Windows 11 x64** and includes the Whisper **base** model and GPU acceleration runtimes. Auto prefers a compatible NVIDIA GPU. A recognized GPU failure during loading or the first computation before confirmed captions triggers one CPU attempt with a visible reason. GPU and CPU can also be selected manually. AMD and integrated-graphics users can use CPU. GPU/CPU were verified on one RTX 4090 computer; other devices remain part of public testing.
+VidSage supports **Windows 11 x64**. Allow at least **6 GB** for installation and extraction. The installer includes the base model for local captions, which can run on the CPU or a compatible NVIDIA GPU. Start with a short video to try it on your computer.
 
 | What you want to do | Where to start |
 |---|---|
@@ -42,19 +42,19 @@ This release targets **Windows 11 x64** and includes the Whisper **base** model 
 | Analyze, ask questions, or translate | Configure your chosen service and review costs and data sharing |
 | Check hardware suitability | Read the [hardware and model guide](docs/HARDWARE.en.md), then try a short video |
 
-Allow at least 6 GB for installation and temporary extraction. Model file size is not a RAM requirement. A minimum RAM specification and general transcription-speed guarantees have not been validated.
+Minimum memory requirements and compatibility with older processors still need testing. See [system requirements and caption models](docs/HARDWARE.en.md).
 
 ## Installation and updates
 
 Obtain the complete Setup from the [0.1.80 Release](https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.1.80) and verify its SHA256. The first preview is unsigned. Windows may show an unknown-publisher or security warning, and some device policies may prevent execution. Verify the source first; stop if you encounter an unexpected or malware warning. Do not disable system protection.
 
-The installer includes the player, core, local caption runtime, and base model; no development environment is required. Updates use a full Setup after closing the player. Standard Windows uninstall is available; updates and uninstall preserve personal data by default. About → Updates and installation checks this repository for public previews. Updates download a full Setup; live patching is not provided.
+You only need the EXE installer to use VidSage. Source ZIPs and development tools are optional. Check for a new release under About → Updates and installation, then close the app and run the new installer in the same folder. Updates and uninstall preserve personal data by default.
 
 [Installation, checksums, and the first four steps →](docs/GETTING_STARTED.en.md)
 
 ## Privacy and feedback
 
-Local captions stay on your computer. Authorized cloud analysis, questions, and translation send subtitles and necessary context to the selected provider. ChatGPT sign-in connects to a cloud service; it does not establish transcription-API access through your subscription.
+Caption generation runs on your computer. Cloud analysis, questions, and translation send subtitles and necessary context to your selected provider after you grant permission.
 
 Limited runtime logs stay local; the first preview does not upload them automatically. Export a diagnostic ZIP through **关于 → 报告问题 (About → Report a problem)** after reviewing its contents, then choose whether to submit it. **GitHub Issues are public. Image content and metadata are not automatically redacted.**
 

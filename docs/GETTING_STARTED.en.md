@@ -1,59 +1,67 @@
 # Getting started with VidSage
 
-The application currently uses a Simplified Chinese interface. This English documentation explains the Chinese controls; an English UI is planned for a later version.
+[简体中文](GETTING_STARTED.zh-CN.md) · [Privacy](PRIVACY.md)
 
-[中文](GETTING_STARTED.zh-CN.md) · [Privacy and authorization](PRIVACY.md)
+VidSage combines video, subtitles, AI analysis, and notes. The app currently uses a Simplified Chinese interface; this guide includes the Chinese names of controls.
 
-VidSage brings video, subtitles, analysis, and notes into one workspace. Open a video first, then connect the services you need.
+## Install
 
-## Install, update, or uninstall
+The current preview is **0.1.80 for Windows 11 x64**. Download `VidSage-0.1.80-win11-x64-Setup.exe` from the [official release page](https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.1.80). You only need this EXE to use the app. The source archives are for developers who need them.
 
-The public preview is **0.1.80 for Windows 11 x64**. Obtain the installer from the [official Release](https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.1.80) and verify its SHA256. The preview is unsigned; publisher identity has not been verified by Windows.
+The installer includes the player, local caption libraries, and the base model. No development tools are needed. Allow at least 6 GB for installation and extraction.
 
-The complete installer includes the player, self-contained core, local subtitle runtime, and a small base model. Node.js and the .NET SDK are not required. Allow at least 6 GB for installation and extraction; optional larger models need additional space.
+This first release is unsigned. Windows may show “Unknown publisher” or “Windows protected your PC.” Check the download source and checksum before installing:
 
-Run Setup and choose an installation directory. The home screen starts with both side panels collapsed. If AI is not configured, a small invitation offers a guided setup. You can skip it.
+1. Run this in PowerShell, replacing the path with the downloaded file:
 
-To update, close VidSage and run the newer complete Setup in the same installation directory. Personal data is stored separately, and earlier program versions are retained. Setup asks you to close an active instance instead of stopping it forcibly. **关于 → 更新与安装 (About → Updates and installation)** provides a version-check entry; it checks this repository for public previews and opens the download page. Automatic downloads, live patching, and silent installation are not available yet.
+   ```powershell
+   Get-FileHash -LiteralPath "full path to the installer" -Algorithm SHA256
+   ```
 
-Uninstall through **Windows Settings → Apps → Installed apps → VidSage**. Uninstalling preserves personal data, models, account data, and diagnostic records by default. Development-preview data is not automatically migrated into an installed copy.
+2. Compare the full result with the SHA256 below. If it differs, stop and check the download source.
+3. Once verified, you may choose **More info → Run anyway** if Windows offers it. If malware is reported, the option is unavailable, or the source is unclear, stop and report the message. Do not disable system protection.
+4. Run the installer, choose a folder, and follow the prompts.
 
-## Verify the installer and understand Windows prompts
-
-The first public preview is **unsigned**. We are not purchasing a signing certificate for this preview. Its SHA256 checksum lets you check that your download matches the published file; it does not verify the publisher or prove that software is safe.
-
-1. Download Setup and its checksum from the official [GitHub Releases](https://github.com/Elviszhuoyu/VidSage-Releases/releases) page.
-2. In PowerShell, run `Get-FileHash -LiteralPath "full path to the installer" -Algorithm SHA256`.
-3. Compare the entire value with the checksum for that exact version. If they differ, do not run the file.
-4. Windows may show “Unknown publisher” or “Windows protected your PC.” After verifying the official source and checksum, you may use **More info → Run anyway** if your device allows it. If that option is unavailable, malware is reported, or you are unsure, stop and report the message. Do not disable Windows security protections.
-
-The installer is VidSage-0.1.80-win11-x64-Setup.exe. SHA256:
+SHA256 for the 0.1.80 installer:
 
 `aa9d787103af26e4771dc499dbea0e17b485e61a8911440e64a5fc5e55b2a549`
 
-SHA256SUMS.txt is provided on the release page. This checksum applies only to this version.
+A checksum checks that the file matches the release. It does not replace a digital signature or security checks. Use the matching release page for other versions.
 
-## Four short steps
+## First use
 
-1. **Connect AI.** Choose an API provider or ChatGPT subscription authorization. API access needs your own endpoint, key, and model. ChatGPT sign-in opens the official browser authorization flow and connects to a cloud service; it does not install a local GPT model. Playback and local subtitle generation need no AI account.
-2. **Connect media accounts when needed.** Bilibili sign-in can access media and subtitles available to that account. It is optional. YouTube currently supports public videos.
-3. **Prepare subtitles.** Use existing subtitles or import a local file. For videos without subtitles, select the bundled base model and start a local caption task. Larger models download only after you choose them. Choose “使用此模型” to set the default. A successful model check or preparation, or starting a caption task, also remembers the selection.
-4. **Start learning.** Open a local video or supported URL, obtain subtitles, and open **AI 学习 (AI Learning)**. Analysis, questions, and translation use your selected service. VidSage asks before sending content to a service and remembers that authorization for the service.
+Follow the setup guide at the top right, or skip it. Reopen it through **关于 → 上手指引 (About → Getting started)**.
 
-You can move back, continue, or skip. Reopen the guide from **关于 → 上手指引 (About → Getting started)**. The guide does not start downloads, transcription, or paid inference automatically.
+1. Open a local video or supported web address. Local playback needs no AI account.
+2. Use existing subtitles or import a subtitle file. If there are none, select base in the caption task panel and start generation.
+3. For analysis, questions, or translation, configure your API, connect ChatGPT, or choose a supported local service under **AI 服务 (AI services)**. Cloud services may charge separately. VidSage asks for permission before sending content and remembers that permission for the selected service.
+4. Open **AI 学习 (AI Learning)** to analyze the subtitles or ask questions. Select a timestamp to return to the video and save useful content as notes.
 
-## Work with the video
+Optional Bilibili sign-in provides access to media and subtitles your account may view. YouTube currently supports public videos.
 
-Select a subtitle or result timestamp to return to the source. Ask questions about the available subtitles and save useful material as notes. When a playing video has no available subtitles, a small tip may suggest local generation. It closes automatically or manually; hovering or keyboard focus pauses its countdown. Its action opens the caption task without starting transcription.
+Local caption generation needs no additional AI account. Larger models download only when you select them. See [system requirements and models](HARDWARE.en.md).
 
-Recognition, translation, and AI output can be inaccurate. Check names, numbers, and important claims against the original video and other reliable sources. Use appropriate professional advice for consequential decisions.
+## Settings
 
-Settings have four categories: **AI 服务 (AI services)**, **媒体账号 (Media accounts)**, **字幕 (Subtitles)**, and **播放器 (Player)**. Subtitle settings include local models and storage. **关于 → 支持作者 (About → Support the author)** offers optional WeChat Pay and Alipay support; the amount is voluntary and does not affect features.
+| Category | Options |
+|---|---|
+| AI 服务 (AI services) | APIs, authorization, services, models, and connection checks |
+| 媒体账号 (Media accounts) | Platform sign-in and sessions |
+| 字幕 (Subtitles) | Display, translation, local models, and storage |
+| 播放器 (Player) | Playback, appearance, icons, and local records |
+
+**关于 → 支持作者 (About → Support the author)** offers optional donations, which do not affect features.
+
+## Update or uninstall
+
+Use **关于 → 更新与安装 (About → Updates and installation)** to check for updates and open the download page. Close VidSage, then run the new installer in the same installation folder. The app does not download or install updates automatically.
+
+Uninstall through **Windows Settings → Apps → Installed apps → VidSage**. Updates and uninstall preserve captions, notes, models, account data, and diagnostic records by default, so you can reuse them after reinstalling.
 
 ## Report a problem
 
-Use **关于 → 报告问题 (About → Report a problem)**. Describe what happened, add the time and optional images, review the contents, and export a ZIP locally. If the player cannot open, use the independent diagnostic entry in the Start menu. There is currently no automatic upload endpoint; exporting does not send the report to the author.
+Use **关于 → 报告问题 (About → Report a problem)**, review the contents, and export a diagnostic ZIP. If VidSage will not open, use **VidSage 反馈与诊断 (VidSage Feedback and Diagnostics)** in the Start menu.
 
-A random installation identifier helps relate reports you choose to share. It reads no hardware serial numbers, can be reset, and survives updates in the same data directory. Resetting it does not remove data or change reports already shared. Check text, images, and image metadata before sharing. See the [privacy statement](PRIVACY.md).
+The ZIP stays on your computer until you choose to share it. Check text and images for accounts, keys, private paths, and other sensitive information first. Follow the [feedback guide](FEEDBACK.en.md).
 
-See [hardware and models](HARDWARE.en.md) and the [feedback guide](FEEDBACK.en.md).
+Captions and AI results can be wrong, especially names and numbers. Check them against the video.

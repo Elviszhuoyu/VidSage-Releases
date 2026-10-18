@@ -2,7 +2,7 @@
 
 [简体中文](FEEDBACK.zh-CN.md) · [Open an issue](https://github.com/Elviszhuoyu/VidSage-Releases/issues/new/choose)
 
-A repeatable description helps more than “it does not work.” You do not need coding knowledge or a video upload to report a problem.
+We welcome problems and suggestions from your experience. Describe the steps you took; code and full video uploads are not needed.
 
 ## Include these details
 
@@ -25,7 +25,7 @@ For captions, add the model, video duration, and source language. For playback, 
 
 ## If the player will not open
 
-Use **VidSage 反馈与诊断 (VidSage Feedback and Diagnostics)** in the Start menu. This starts without the player core or speech recognition service. For installation failures, describe the installer message. Installer logs may contain local paths and are not automatically included in the diagnostic ZIP.
+Use **VidSage 反馈与诊断 (VidSage Feedback and Diagnostics)** in the Start menu to review and export diagnostics. For installation failures, describe the installer message. Installer logs may contain local paths and are not automatically included in the diagnostic ZIP.
 
 Limited runtime records stay on your computer. A random installation identifier relates reports you choose to share and can be reset. Read the [privacy statement](PRIVACY.md).
 
