@@ -2,11 +2,11 @@
 <h1 align="center">VidSage 脉络</h1>
 <p align="center"><strong>看视频，也理清思路。</strong><br>视频学习播放器，把字幕、笔记与 AI 分析放在视频旁边。</p>
 <p align="center"><strong>简体中文</strong> · <a href="README.en.md"><strong>English</strong></a></p>
-<p align="center"><img src="docs/assets/release/windows.svg" alt="Windows 11 x64"> <img src="docs/assets/release/languages.svg" alt="中文界面 · English docs"> <img src="docs/assets/release/preview.svg" alt="Preview in preparation"></p>
+<p align="center"><img src="docs/assets/release/windows.svg" alt="Windows 11 x64"> <img src="docs/assets/release/languages.svg" alt="中文界面 · English docs"> <img src="docs/assets/release/preview.svg" alt="0.1.80 Public preview"></p>
 
 <p align="center"><a href="docs/GETTING_STARTED.zh-CN.md">开始使用</a> · <a href="docs/HARDWARE.zh-CN.md">硬件与模型</a> · <a href="docs/FEEDBACK.zh-CN.md">反馈问题</a> · <a href="docs/PRIVACY.md">隐私与授权</a></p>
 
-> **公开测试准备中，目前尚无公开安装包。** 当前展示版本为 0.1.77。安装包完成分发检查后，将在 [GitHub Releases](https://github.com/Elviszhuoyu/VidSage-Releases/releases) 提供。首版采用未签名测试包，附 SHA256 和安装提示。
+> **0.1.80 首次公开测试包现已提供下载。** 前往 [GitHub Release](https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.1.80) 获取完整安装包、SHA256 和第三方对应源码材料。首版未签名，请按安装指南核对来源和摘要。下方保留 0.1.77 界面示意图。
 
 ## 为什么做 VidSage
 
@@ -31,7 +31,7 @@
 
 ## 我的电脑能用吗
 
-当前面向 **Windows 11 x64、支持 x86-64-v3（含 AVX2）的处理器**。完整包内置 Whisper **base** 模型，本地字幕可以使用 CPU；AMD 显卡或核显用户也可以走 CPU 路径。GPU 加速需要兼容环境，当前候选尚未完成独立 GPU 环境验收。
+当前面向 **Windows 11 x64**。完整包内置 Whisper **base** 模型和 GPU 加速运行库。自动模式优先使用兼容的 NVIDIA GPU；模型加载或首段尚无确认字幕时出现明确 GPU 故障，会尝试一次 CPU 并显示原因。可手动选择 GPU 或 CPU；AMD 显卡或核显用户可走 CPU。已在本机 RTX 4090 验证 GPU/CPU，其他设备仍待公测反馈。
 
 | 想做的事 | 从这里开始 |
 |---|---|
@@ -40,13 +40,13 @@
 | AI 分析、问答、翻译 | 配置自己选择的服务，确认费用与内容发送范围 |
 | 判断配置是否适合 | 查看[硬件与模型说明](docs/HARDWARE.zh-CN.md)，先试一段短视频 |
 
-为安装和临时解压预留至少 4 GB。模型文件大小不等于内存要求；最低 RAM 和全平台转写速度尚未完成实测，暂不作保证。
+为安装和临时解压预留至少 6 GB。模型文件大小不等于内存要求；最低 RAM 和全平台转写速度尚未完成实测，暂不作保证。
 
 ## 安装与更新
 
-公开下载就绪后，从本仓库 Releases 获取完整 Setup 并核对 SHA256。首版未签名，Windows 可能显示未知发布者或安全提示；部分设备策略可能阻止运行。请先核对下载来源，遇到不明或恶意软件提示时停止安装，不要关闭系统防护。
+从本仓库 [0.1.80 Release](https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.1.80) 获取完整 Setup 并核对 SHA256。首版未签名，Windows 可能显示未知发布者或安全提示；部分设备策略可能阻止运行。请先核对下载来源，遇到不明或恶意软件提示时停止安装，不要关闭系统防护。
 
-安装包包含播放器、核心、本地字幕运行库和 base 模型，无需开发环境。更新使用完整 Setup：关闭播放器，再安装到原目录。Windows 标准卸载入口已提供，升级和卸载默认保留个人资料。版本检查入口已准备，公开更新渠道尚未启用。
+安装包包含播放器、核心、本地字幕运行库和 base 模型，无需开发环境。更新使用完整 Setup：关闭播放器，再安装到原目录。Windows 标准卸载入口已提供，升级和卸载默认保留个人资料。「关于 → 更新与安装」可检查本仓库公开测试版本；更新下载完整 Setup，不是热更新。
 
 [安装、校验与四步上手 →](docs/GETTING_STARTED.zh-CN.md)
 

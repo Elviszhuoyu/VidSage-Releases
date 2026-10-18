@@ -2,11 +2,11 @@
 <h1 align="center">VidSage</h1>
 <p align="center"><strong>Watch, understand, and return to the source.</strong><br>A video learning player with subtitles, notes, and AI analysis beside the video.</p>
 <p align="center"><a href="README.md"><strong>简体中文</strong></a> · <strong>English</strong></p>
-<p align="center"><img src="docs/assets/release/windows.svg" alt="Windows 11 x64"> <img src="docs/assets/release/languages.svg" alt="中文界面 · English docs"> <img src="docs/assets/release/preview.svg" alt="Preview in preparation"></p>
+<p align="center"><img src="docs/assets/release/windows.svg" alt="Windows 11 x64"> <img src="docs/assets/release/languages.svg" alt="中文界面 · English docs"> <img src="docs/assets/release/preview.svg" alt="0.1.80 Public preview"></p>
 
 <p align="center"><a href="docs/GETTING_STARTED.en.md">Get started</a> · <a href="docs/HARDWARE.en.md">Hardware & models</a> · <a href="docs/FEEDBACK.en.md">Report a problem</a> · <a href="docs/PRIVACY.md">Privacy</a></p>
 
-> **Public testing is being prepared; no public installer is available yet.** Screenshots show 0.1.77. After redistribution checks are complete, the unsigned preview installer, SHA256 checksum, and installation notes will be available in [GitHub Releases](https://github.com/Elviszhuoyu/VidSage-Releases/releases).
+> **The 0.1.80 public preview is available.** Get the complete installer, SHA256 checksums, and corresponding third-party source materials from the [GitHub Release](https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.1.80). This preview is unsigned; verify the source and checksum before installation. The existing screenshots show 0.1.77.
 
 The app currently has a **Simplified Chinese interface**. English documentation is available; an English interface is planned for a later version.
 
@@ -33,7 +33,7 @@ The home screen starts clear. An optional four-step guide helps prepare services
 
 ## Will it work on my computer?
 
-Current builds target **Windows 11 x64 with x86-64-v3 CPU support (including AVX2)**. The complete package includes the Whisper **base** model. Captions can run on CPU, including computers with AMD graphics or integrated graphics. GPU acceleration requires a compatible environment; independent GPU setups have not yet been validated for this candidate.
+This release targets **Windows 11 x64** and includes the Whisper **base** model and GPU acceleration runtimes. Auto prefers a compatible NVIDIA GPU. A recognized GPU failure during loading or the first computation before confirmed captions triggers one CPU attempt with a visible reason. GPU and CPU can also be selected manually. AMD and integrated-graphics users can use CPU. GPU/CPU were verified on one RTX 4090 computer; other devices remain part of public testing.
 
 | What you want to do | Where to start |
 |---|---|
@@ -42,13 +42,13 @@ Current builds target **Windows 11 x64 with x86-64-v3 CPU support (including AVX
 | Analyze, ask questions, or translate | Configure your chosen service and review costs and data sharing |
 | Check hardware suitability | Read the [hardware and model guide](docs/HARDWARE.en.md), then try a short video |
 
-Allow at least 4 GB for installation and temporary extraction. Model file size is not a RAM requirement. A minimum RAM specification and general transcription-speed guarantees have not been validated.
+Allow at least 6 GB for installation and temporary extraction. Model file size is not a RAM requirement. A minimum RAM specification and general transcription-speed guarantees have not been validated.
 
 ## Installation and updates
 
-When downloads are ready, obtain the complete Setup from this repository's Releases and verify its SHA256. The first preview is unsigned. Windows may show an unknown-publisher or security warning, and some device policies may prevent execution. Verify the source first; stop if you encounter an unexpected or malware warning. Do not disable system protection.
+Obtain the complete Setup from the [0.1.80 Release](https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.1.80) and verify its SHA256. The first preview is unsigned. Windows may show an unknown-publisher or security warning, and some device policies may prevent execution. Verify the source first; stop if you encounter an unexpected or malware warning. Do not disable system protection.
 
-The installer includes the player, core, local caption runtime, and base model; no development environment is required. Updates use a full Setup after closing the player. Standard Windows uninstall is available; updates and uninstall preserve personal data by default. The version-check entry is ready, but the public update channel is not enabled yet.
+The installer includes the player, core, local caption runtime, and base model; no development environment is required. Updates use a full Setup after closing the player. Standard Windows uninstall is available; updates and uninstall preserve personal data by default. About → Updates and installation checks this repository for public previews. Updates download a full Setup; live patching is not provided.
 
 [Installation, checksums, and the first four steps →](docs/GETTING_STARTED.en.md)
 

@@ -8,26 +8,30 @@ VidSage brings video, subtitles, analysis, and notes into one workspace. Open a 
 
 ## Install, update, or uninstall
 
-The current candidate is **0.1.77 for Windows 11 x64**. Public distribution has not been cleared. When available, obtain installers from the project's announced GitHub Releases channel and check the version's SHA256. The current candidate is unsigned; publisher identity has not been verified by Windows.
+The public preview is **0.1.80 for Windows 11 x64**. Obtain the installer from the [official Release](https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.1.80) and verify its SHA256. The preview is unsigned; publisher identity has not been verified by Windows.
 
-The complete installer includes the player, self-contained core, local subtitle runtime, and a small base model. Node.js and the .NET SDK are not required. Allow at least 4 GB for installation and extraction; optional larger models need additional space.
+The complete installer includes the player, self-contained core, local subtitle runtime, and a small base model. Node.js and the .NET SDK are not required. Allow at least 6 GB for installation and extraction; optional larger models need additional space.
 
 Run Setup and choose an installation directory. The home screen starts with both side panels collapsed. If AI is not configured, a small invitation offers a guided setup. You can skip it.
 
-To update, close VidSage and run the newer complete Setup in the same installation directory. Personal data is stored separately, and earlier program versions are retained. Setup asks you to close an active instance instead of stopping it forcibly. **关于 → 更新与安装 (About → Updates and installation)** provides a version-check entry; it remains unconfigured until a public release channel is selected. Automatic downloads, live patching, and silent installation are not available yet.
+To update, close VidSage and run the newer complete Setup in the same installation directory. Personal data is stored separately, and earlier program versions are retained. Setup asks you to close an active instance instead of stopping it forcibly. **关于 → 更新与安装 (About → Updates and installation)** provides a version-check entry; it checks this repository for public previews and opens the download page. Automatic downloads, live patching, and silent installation are not available yet.
 
 Uninstall through **Windows Settings → Apps → Installed apps → VidSage**. Uninstalling preserves personal data, models, account data, and diagnostic records by default. Development-preview data is not automatically migrated into an installed copy.
 
 ## Verify the installer and understand Windows prompts
 
-The first public preview will be **unsigned**. We are not purchasing a signing certificate for this preview. Its SHA256 checksum lets you check that your download matches the published file; it does not verify the publisher or prove that software is safe.
+The first public preview is **unsigned**. We are not purchasing a signing certificate for this preview. Its SHA256 checksum lets you check that your download matches the published file; it does not verify the publisher or prove that software is safe.
 
 1. Download Setup and its checksum from the official [GitHub Releases](https://github.com/Elviszhuoyu/VidSage-Releases/releases) page.
 2. In PowerShell, run `Get-FileHash -LiteralPath "full path to the installer" -Algorithm SHA256`.
 3. Compare the entire value with the checksum for that exact version. If they differ, do not run the file.
 4. Windows may show “Unknown publisher” or “Windows protected your PC.” After verifying the official source and checksum, you may use **More info → Run anyway** if your device allows it. If that option is unavailable, malware is reported, or you are unsure, stop and report the message. Do not disable Windows security protections.
 
-No public installer is available yet. A checksum for an older internal candidate must not be used for a newer download.
+The installer is VidSage-0.1.80-win11-x64-Setup.exe. SHA256:
+
+`aa9d787103af26e4771dc499dbea0e17b485e61a8911440e64a5fc5e55b2a549`
+
+SHA256SUMS.txt is provided on the release page. This checksum applies only to this version.
 
 ## Four short steps
 

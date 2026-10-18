@@ -11,18 +11,18 @@ Local captions use OpenAI Whisper-family models through faster-whisper 1.2.1 and
 | Play video, read existing subtitles, take notes | Windows 11 x64; no speech model or AI account required |
 | Generate local captions | Start with the bundled base model. CPU processing does not require a dedicated GPU |
 | Analyze, ask questions, or translate | Configure an API, ChatGPT authorization, or a supported local service. Cloud services may charge separately |
-| Accelerate captions with a GPU | Compatible NVIDIA hardware, drivers, and runtimes. Independent GPU setups have not yet been validated for this build |
+| Accelerate captions with a GPU | Compatible NVIDIA hardware and drivers. Acceleration runtimes are included; choose Auto, GPU, or CPU |
 
-Computers with AMD graphics or Intel integrated graphics can use CPU processing. AMD/Intel GPU acceleration is not promised, and not every NVIDIA setup is ready without configuration. Device selection is currently automatic; the app does not guarantee restarting a failed GPU task on CPU.
+Computers with AMD graphics or Intel integrated graphics can use CPU processing. AMD/Intel GPU acceleration is not promised, and not every NVIDIA setup is ready without configuration. Auto prefers a compatible NVIDIA GPU. A recognized GPU failure during loading or the first computation before confirmed captions triggers one CPU attempt with a visible reason. Manual GPU mode does not silently switch. Later failures preserve confirmed output. GPU and CPU were verified on one RTX 4090 computer; other devices remain part of public testing.
 
 ## Current support and validation
 
 | Item | Details |
 |---|---|
 | OS | Windows 11 x64. Other systems and Windows ARM have not been validated |
-| CPU | The current player requires **x86-64-v3** CPU and OS support, including AVX2, FMA, BMI2 and the associated processor state support. SSE 4.1 alone is insufficient. Older CPU configurations have not all been tested |
+| CPU | This release uses a Windows x64 player build. Minimum instruction-set and performance boundaries on older processors remain unverified across devices; the previous build’s x86-64-v3 label is not carried over |
 | RAM | Usage varies by model and workload. A minimum RAM specification has not yet been validated |
-| Storage | Allow at least 4 GB for installation and temporary extraction, plus space for optional models, audio caches, notes, and retained versions |
+| Storage | Allow at least 6 GB for installation and temporary extraction, plus space for optional models, audio caches, notes, and retained versions |
 | Network | Local media and the bundled model work offline. Online media, optional downloads, and cloud AI require a connection |
 
 These are support boundaries, not a performance guarantee for every computer. Try a short video before processing a long course. Speed depends on the processor, memory, model, audio length, and other running applications.
@@ -46,5 +46,3 @@ Record the model, failure stage, operating system, CPU, and GPU, then follow the
 Cloud audio transcription is not available in this release. ChatGPT sign-in serves the integrated text analysis, questions, and translation features; it does not establish access to transcription APIs through your subscription.
 
 References: [Whisper](https://github.com/openai/whisper), [faster-whisper](https://github.com/SYSTRAN/faster-whisper#gpu), [CTranslate2 hardware support](https://opennmt.net/CTranslate2/hardware_support.html).
-
-Player CPU requirement: [x86-64 psABI](https://gitlab.com/x86-psABIs/x86-64-ABI/-/blob/master/x86-64-ABI/low-level-sys-info.tex).
