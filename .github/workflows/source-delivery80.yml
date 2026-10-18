@@ -1,0 +1,23 @@
+name: Prepare fixed third-party sources 0.1.80
+on:
+  push:
+    branches: [codex/source-delivery-0.1.80]
+    paths: [tools/source_delivery80.py, .github/workflows/source-delivery80.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: source-delivery-0.1.80
+  cancel-in-progress: false
+jobs:
+  sources:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - name: Read the exact public packaging helper
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api "repos/$GITHUB_REPOSITORY/contents/tools/source_delivery80.py?ref=$GITHUB_SHA" --jq .content | base64 --decode > source_delivery80.py
+          python3 source_delivery80.py
