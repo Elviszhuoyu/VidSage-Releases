@@ -1,48 +1,51 @@
-# Hardware and caption models
+# System requirements and caption models
 
 [简体中文](HARDWARE.zh-CN.md) · [Getting started](GETTING_STARTED.en.md)
 
-Local captions use OpenAI Whisper-family models through faster-whisper 1.2.1 and CTranslate2 4.7.2. NVIDIA technology is used for optional GPU acceleration. The Whisper models are not NVIDIA models or models trained by VidSage.
+VidSage currently supports Windows 11 x64. Local captions use OpenAI Whisper models on the CPU or a compatible NVIDIA GPU.
 
-## What you need
-
-| Use | Requirements |
-|---|---|
-| Play video, read existing subtitles, take notes | Windows 11 x64; no speech model or AI account required |
-| Generate local captions | Start with the bundled base model. CPU processing does not require a dedicated GPU |
-| Analyze, ask questions, or translate | Configure an API, ChatGPT authorization, or a supported local service. Cloud services may charge separately |
-| Accelerate captions with a GPU | Compatible NVIDIA hardware and drivers. Acceleration runtimes are included; choose Auto, GPU, or CPU |
-
-Computers with AMD graphics or Intel integrated graphics can use CPU processing. AMD/Intel GPU acceleration is not promised, and not every NVIDIA setup is ready without configuration. Auto prefers a compatible NVIDIA GPU. A recognized GPU failure during loading or the first computation before confirmed captions triggers one CPU attempt with a visible reason. Manual GPU mode does not silently switch. Later failures preserve confirmed output. GPU and CPU were verified on one RTX 4090 computer; other devices remain part of public testing.
-
-## Current support and validation
+## System requirements
 
 | Item | Details |
 |---|---|
-| OS | Windows 11 x64. Other systems and Windows ARM have not been validated |
-| CPU | This release uses a Windows x64 player build. Minimum instruction-set and performance boundaries on older processors remain unverified across devices; the previous build’s x86-64-v3 label is not carried over |
-| RAM | Usage varies by model and workload. A minimum RAM specification has not yet been validated |
-| Storage | Allow at least 6 GB for installation and temporary extraction, plus space for optional models, audio caches, notes, and retained versions |
-| Network | Local media and the bundled model work offline. Online media, optional downloads, and cloud AI require a connection |
+| Operating system | Windows 11 x64; Windows ARM, macOS, and Linux are not currently supported |
+| Processor | A 64-bit Intel or AMD processor; compatibility with older models still needs testing |
+| Memory | The minimum requirement has not been established. Larger models use more memory |
+| Storage | Allow at least 6 GB for installation and extraction, plus space for optional models, captions, notes, and retained versions |
+| Connection | Local playback and caption generation with the bundled model work offline. Online videos, model downloads, and cloud AI require internet access |
 
-These are support boundaries, not a performance guarantee for every computer. Try a short video before processing a long course. Speed depends on the processor, memory, model, audio length, and other running applications.
+Testing has covered a limited range of computers. Try a short video before processing a long course.
+
+## Caption generation and GPU support
+
+The installer includes the base model and NVIDIA acceleration libraries. Computers without a dedicated GPU, or with AMD or Intel graphics, can generate captions on the CPU. GPU acceleration currently requires a compatible NVIDIA GPU and an installed driver.
+
+Caption settings offer three options:
+
+- **Auto** prefers NVIDIA GPU processing. If a recoverable GPU error occurs while loading the model or starting recognition, VidSage explains the error and tries the CPU.
+- **GPU** uses the GPU only. If it fails, you can choose to switch to CPU.
+- **CPU** uses the processor without GPU acceleration.
+
+Saved captions are retained if recognition fails. CPU and GPU processing have worked on the test computer; compatibility with other configurations is still being tested.
 
 ## Choose a model
 
-| Model | Model files | Suggested use |
+| Model | Download size | Suggested use |
 |---|---:|---|
-| base | About 148 MB, included | Default for new users. Start here to try the full workflow with lower resource demands |
-| small | About 486 MB, optional | Try when you need another accuracy option; still check names and numbers |
-| large-v3-turbo | About 1.62 GB, optional | A heavier option. First confirm that resource use and processing time suit your machine |
+| base | About 148 MB, included | Start here for lower resource use |
+| small | About 486 MB, optional | If base performs poorly, compare both models on the same short video |
+| large-v3-turbo | About 1.62 GB, optional | Uses more resources. Try a short video to check results and processing time |
 
-Sizes are decimal file sizes, not RAM or VRAM requirements. A larger model does not guarantee a better result for every recording. Sources: [Systran/base](https://huggingface.co/Systran/faster-whisper-base), [Systran/small](https://huggingface.co/Systran/faster-whisper-small), [Dropbox Dash/large-v3-turbo](https://huggingface.co/dropbox-dash/faster-whisper-large-v3-turbo).
+These are file sizes. Running a model also requires RAM or VRAM. A larger model may not improve every recording; check names and numbers against the video. VidSage remembers your model selection. Custom models must use a compatible faster-whisper / CTranslate2 format.
 
-Existing model preferences are preserved. Custom directories must use a compatible faster-whisper/CTranslate2 format.
+Model sources: [base](https://huggingface.co/Systran/faster-whisper-base), [small](https://huggingface.co/Systran/faster-whisper-small), [large-v3-turbo](https://huggingface.co/dropbox-dash/faster-whisper-large-v3-turbo).
 
-## If generation fails
+## AI analysis and captions
 
-Record the model, failure stage, operating system, CPU, and GPU, then follow the [feedback guide](FEEDBACK.en.md). Keep private videos, account tokens, and full transcripts out of public reports.
+Local caption generation needs no AI account. For analysis, questions, and translation, configure your own API, connect ChatGPT, or select a supported local service in AI settings. Cloud providers set their own fees and usage limits.
 
-Cloud audio transcription is not available in this release. ChatGPT sign-in serves the integrated text analysis, questions, and translation features; it does not establish access to transcription APIs through your subscription.
+Cloud audio transcription is not available in this version. ChatGPT sign-in is used for text analysis, questions, and translation.
 
-References: [Whisper](https://github.com/openai/whisper), [faster-whisper](https://github.com/SYSTRAN/faster-whisper#gpu), [CTranslate2 hardware support](https://opennmt.net/CTranslate2/hardware_support.html).
+If caption generation fails, note the model, the step that failed, and your computer configuration, then follow the [feedback guide](FEEDBACK.en.md).
+
+Technical sources: [Whisper](https://github.com/openai/whisper), [faster-whisper](https://github.com/SYSTRAN/faster-whisper), [CTranslate2](https://opennmt.net/CTranslate2/hardware_support.html).

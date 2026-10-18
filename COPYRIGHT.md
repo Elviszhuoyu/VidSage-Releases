@@ -8,7 +8,7 @@ Copyright © 2026 Zhuoyu（卓雨）。保留所有未明确授予的权利。
 
 对作者正式发布的官方测试包，允许用户免费下载、安装及运行，用于体验、评估和问题反馈。此项测试使用许可不授予上述原创源码的再开发、再分发或再许可权利；自愿打赏也不构成此类授权。
 
-第三方组件，以及修改后仍受第三方许可证约束的部分，继续遵循各自许可证和版权声明。本声明不改变、限制或取代 GPL、LGPL、MPL 等适用许可证授予的权利及要求。相关信息见随包 THIRD-PARTY-NOTICES.txt、dependency-inventory.json 与 licenses/。本声明不表示未通过分发审查的本机候选已经获准外发。
+第三方组件，以及修改后仍受第三方许可证约束的部分，继续遵循各自许可证和版权声明。本声明不改变、限制或取代 GPL、LGPL、MPL 等适用许可证授予的权利及要求。相关信息见随包 THIRD-PARTY-NOTICES.txt、dependency-inventory.json 与 licenses/。
 
 其他使用方式请事先取得作者的书面授权。可通过 [作者 GitHub 资料页](https://github.com/Elviszhuoyu)列出的公开联系方式提出申请；未收到答复不构成授权。
 
@@ -22,7 +22,7 @@ Except as permitted by applicable law, GitHub’s Terms of Service, an existing 
 
 Users may download, install, and run officially released test builds free of charge for evaluation and feedback. This test-use permission does not grant rights to develop from, redistribute, or sublicense the original source code. Voluntary financial support does not grant those rights.
 
-Third-party components, including modifications that remain governed by third-party licenses, retain their respective licenses and copyright notices. This notice does not alter, restrict, or replace rights or obligations under applicable licenses, including GPL, LGPL, and MPL. See the accompanying THIRD-PARTY-NOTICES.txt, dependency-inventory.json, and licenses/ directory. This notice does not authorize external distribution of local candidates whose redistribution review is incomplete.
+Third-party components, including modifications that remain governed by third-party licenses, retain their respective licenses and copyright notices. This notice does not alter, restrict, or replace rights or obligations under applicable licenses, including GPL, LGPL, and MPL. See the accompanying THIRD-PARTY-NOTICES.txt, dependency-inventory.json, and licenses/ directory.
 
 Obtain the author’s prior written permission for other uses. Requests may be sent through public contact details listed on the [author’s GitHub profile](https://github.com/Elviszhuoyu). Silence does not constitute permission.
 
