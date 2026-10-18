@@ -18,6 +18,17 @@ To update, close VidSage and run the newer complete Setup in the same installati
 
 Uninstall through **Windows Settings → Apps → Installed apps → VidSage**. Uninstalling preserves personal data, models, account data, and diagnostic records by default. Development-preview data is not automatically migrated into an installed copy.
 
+## Verify the installer and understand Windows prompts
+
+The first public preview will be **unsigned**. We are not purchasing a signing certificate for this preview. Its SHA256 checksum lets you check that your download matches the published file; it does not verify the publisher or prove that software is safe.
+
+1. Download Setup and its checksum from the official [GitHub Releases](https://github.com/Elviszhuoyu/VidSage-Releases/releases) page.
+2. In PowerShell, run `Get-FileHash -LiteralPath "full path to the installer" -Algorithm SHA256`.
+3. Compare the entire value with the checksum for that exact version. If they differ, do not run the file.
+4. Windows may show “Unknown publisher” or “Windows protected your PC.” After verifying the official source and checksum, you may use **More info → Run anyway** if your device allows it. If that option is unavailable, malware is reported, or you are unsure, stop and report the message. Do not disable Windows security protections.
+
+No public installer is available yet. A checksum for an older internal candidate must not be used for a newer download.
+
 ## Four short steps
 
 1. **Connect AI.** Choose an API provider or ChatGPT subscription authorization. API access needs your own endpoint, key, and model. ChatGPT sign-in opens the official browser authorization flow and connects to a cloud service; it does not install a local GPT model. Playback and local subtitle generation need no AI account.
@@ -40,3 +51,5 @@ Settings have four categories: **AI 服务 (AI services)**, **媒体账号 (Medi
 Use **关于 → 报告问题 (About → Report a problem)**. Describe what happened, add the time and optional images, review the contents, and export a ZIP locally. If the player cannot open, use the independent diagnostic entry in the Start menu. There is currently no automatic upload endpoint; exporting does not send the report to the author.
 
 A random installation identifier helps relate reports you choose to share. It reads no hardware serial numbers, can be reset, and survives updates in the same data directory. Resetting it does not remove data or change reports already shared. Check text, images, and image metadata before sharing. See the [privacy statement](PRIVACY.md).
+
+See [hardware and models](HARDWARE.en.md) and the [feedback guide](FEEDBACK.en.md).
