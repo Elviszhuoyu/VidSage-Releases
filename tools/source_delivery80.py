@@ -131,7 +131,7 @@ for a in manifest['assets']:
 # Replace only the bare whisper.cpp history with every blob from the fixed tree.
 slim = ROOT / 'slim'
 slim.mkdir()
-whisper_row = next(e for e in mpv['entries'] if '/mingw-w64-whisper.cpp-' in e['path'])
+whisper_row = next(e for e in mpv['entries'] if e['route'] == 'official-msys2' and '/mingw-w64-whisper.cpp-' in e['path'])
 raw = ROOT / 'whisper-original'
 extract_zst(DATA / 'mpv' / whisper_row['path'], raw)
 original = raw / 'mingw-w64-whisper.cpp'
@@ -196,7 +196,7 @@ whisper_proof = {'originalArchive': whisper_row['path'], 'originalSha256': whisp
 print('whisper.cpp fixed tree and build recipe verified', flush=True)
 
 # Store the identical LLVM upstream tarball once; retain both distinct recipes and patches.
-llvm_rows = [e for e in mpv['entries'] if re.search(r'/mingw-w64-(llvm-openmp|libc\+\+)-22\.1\.8-1\.src', e['path'])]
+llvm_rows = [e for e in mpv['entries'] if e['route'] == 'official-msys2' and re.search(r'/mingw-w64-(llvm-openmp|libc\+\+)-22\.1\.8-1\.src\.tar\.zst$', e['path'])]
 assert len(llvm_rows) == 2
 shared = slim / 'llvm/shared'; shared.mkdir(parents=True)
 llvm_proof = []
