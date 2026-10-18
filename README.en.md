@@ -1,12 +1,14 @@
-# VidSage
+<p align="center"><img src="docs/assets/release/app-icon.svg" width="64" height="64" alt="VidSage"></p>
+<h1 align="center">VidSage</h1>
+<p align="center"><strong>Watch, understand, and return to the source.</strong><br>A video learning player with subtitles, notes, and AI analysis beside the video.</p>
+<p align="center"><a href="README.md"><strong>简体中文</strong></a> · <strong>English</strong></p>
+<p align="center"><img src="docs/assets/release/windows.svg" alt="Windows 11 x64"> <img src="docs/assets/release/languages.svg" alt="中文界面 · English docs"> <img src="docs/assets/release/preview.svg" alt="Preview in preparation"></p>
 
-The application currently uses a Simplified Chinese interface. This English documentation explains the Chinese controls; an English UI is planned for a later version.
+<p align="center"><a href="docs/GETTING_STARTED.en.md">Get started</a> · <a href="docs/HARDWARE.en.md">Hardware & models</a> · <a href="docs/FEEDBACK.en.md">Report a problem</a> · <a href="docs/PRIVACY.md">Privacy</a></p>
 
-**Watch, understand, and return to the source.**
+> **Public testing is being prepared; no public installer is available yet.** Screenshots show 0.1.77. After redistribution checks are complete, the unsigned preview installer, SHA256 checksum, and installation notes will be available in [GitHub Releases](https://github.com/Elviszhuoyu/VidSage-Releases/releases).
 
-Keep subtitles, notes, and AI analysis beside the video, with timestamps connecting ideas to the original scene.
-
-[中文](README.md) · [Getting started](docs/GETTING_STARTED.en.md) · [Privacy](docs/PRIVACY.md)
+The app currently has a **Simplified Chinese interface**. English documentation is available; an English interface is planned for a later version.
 
 ## Why I built VidSage
 
@@ -18,41 +20,59 @@ That is where VidSage began. I hope it makes learning a little easier for you, t
 
 ![VidSage home and optional setup guide](docs/assets/release/home.png)
 
-## Downloads and testing
-
-Windows 11 x64 · Screenshots show **0.1.77**.
-
-**Public testing is being prepared; no public installer is available yet.** Local installation, upgrade, and uninstall checks have passed. Third-party redistribution review and other release checks remain unfinished. When ready, installers and SHA256 checksums will appear in this repository’s [Releases](https://github.com/Elviszhuoyu/VidSage-Releases/releases).
-
-This repository hosts the product overview, guides, and future downloads. Application source code and development history remain private.
-
 ## A workspace for understanding video
 
-- Use existing subtitles, import a file, or generate captions locally with the bundled small model.
-- Analyze and ask questions about subtitles, then return to the source through timestamps.
-- Save your notes and analysis as material you can revisit and search.
-- Choose API access, ChatGPT cloud authorization, or a supported local service. Media-account sign-in is optional; local playback needs no AI account.
+- Use platform subtitles, import a subtitle file, or generate captions locally.
+- Analyze and ask questions about subtitles, then return to the video through timestamps.
+- Save notes and analysis as material you can revisit and search.
+- Choose an API, ChatGPT cloud authorization, or a supported local service. Media sign-in is optional; local playback needs no AI account.
 
-The home screen starts clear. A small optional guide introduces services and subtitles in four steps. Settings use four concise categories: AI services, Media accounts, Subtitles, and Player.
+The home screen starts clear. An optional four-step guide helps prepare services and subtitles. Settings use four categories: AI services, Media accounts, Subtitles, and Player.
 
 ![Compact settings navigation](docs/assets/release/settings.png)
 
-## Install and use
+## Will it work on my computer?
 
-The complete installer includes the player, core, local caption runtime, and base model. No development environment is required. When public distribution is ready, installers and checksums will be published through the announced GitHub Releases channel.
+Current builds target **Windows 11 x64 with x86-64-v3 CPU support (including AVX2)**. The complete package includes the Whisper **base** model. Captions can run on CPU, including computers with AMD graphics or integrated graphics. GPU acceleration requires a compatible environment; independent GPU setups have not yet been validated for this candidate.
 
-Open a local video or supported Bilibili / YouTube URL, obtain subtitles, then explore AI Learning, questions, and notes. The [getting-started guide](docs/GETTING_STARTED.en.md) covers setup and the full workflow.
+| What you want to do | Where to start |
+|---|---|
+| Watch video and read existing subtitles | Open media; no AI account required |
+| Generate local captions | Start with the bundled base model; small and large-v3-turbo are optional |
+| Analyze, ask questions, or translate | Configure your chosen service and review costs and data sharing |
+| Check hardware suitability | Read the [hardware and model guide](docs/HARDWARE.en.md), then try a short video |
 
-Updates use a complete Setup after the player is closed. Standard Windows uninstall is available; updates and uninstall preserve personal data by default. About includes a version-check entry, but the public channel is not enabled yet.
+Allow at least 4 GB for installation and temporary extraction. Model file size is not a RAM requirement. A minimum RAM specification and general transcription-speed guarantees have not been validated.
+
+## Installation and updates
+
+When downloads are ready, obtain the complete Setup from this repository's Releases and verify its SHA256. The first preview is unsigned. Windows may show an unknown-publisher or security warning, and some device policies may prevent execution. Verify the source first; stop if you encounter an unexpected or malware warning. Do not disable system protection.
+
+The installer includes the player, core, local caption runtime, and base model; no development environment is required. Updates use a full Setup after closing the player. Standard Windows uninstall is available; updates and uninstall preserve personal data by default. The version-check entry is ready, but the public update channel is not enabled yet.
+
+[Installation, checksums, and the first four steps →](docs/GETTING_STARTED.en.md)
 
 ## Privacy and feedback
 
-Local caption generation stays on your computer. Authorized cloud analysis, questions, and translation send subtitles and necessary context to the selected provider. ChatGPT sign-in connects to a cloud service, not a local model.
+Local captions stay on your computer. Authorized cloud analysis, questions, and translation send subtitles and necessary context to the selected provider. ChatGPT sign-in connects to a cloud service; it does not establish transcription-API access through your subscription.
 
-Runtime logs stay local. There is no automatic diagnostic upload endpoint. Review and export a ZIP through **关于 → 报告问题 (About → Report a problem)**, then decide whether to share it. Images and their metadata are not automatically redacted. A random installation identifier relates reports you voluntarily share and reads no hardware serial numbers. See the [privacy statement](docs/PRIVACY.md).
+Limited runtime logs stay local; the first preview does not upload them automatically. Export a diagnostic ZIP through **关于 → 报告问题 (About → Report a problem)** after reviewing its contents, then choose whether to submit it. **GitHub Issues are public. Image content and metadata are not automatically redacted.**
 
-Optional support is available through WeChat Pay and Alipay in **关于 → 支持作者 (About → Support the author)**. The amount is voluntary and does not affect features.
+[How to describe, review, and submit a report →](docs/FEEDBACK.en.md) · [Privacy statement](docs/PRIVACY.md)
+
+## Support the author
+
+If VidSage has helped you, you are welcome to buy me a coffee. Any amount is appreciated. Donations are optional and do not affect features.
+
+<table>
+<tr><td align="center"><strong>微信支付 · WeChat Pay</strong></td><td align="center"><strong>支付宝 · Alipay</strong></td></tr>
+<tr><td align="center"><img src="docs/assets/release/wechat-qr.png" width="184" alt="微信支付收款码 / WeChat Pay donation QR"></td><td align="center"><img src="docs/assets/release/alipay-qr.png" width="184" alt="支付宝收款码 / Alipay donation QR"></td></tr>
+</table>
+
+These codes are also available in **关于 → 支持作者 (About → Support the author)**. A donation does not grant development or redistribution permission.
 
 ## Use and permissions
 
-**Rights in original code are reserved; further development requires the author’s prior written permission.** Officially released test builds may be evaluated free of charge. GitHub platform rights and third-party licenses apply separately. Donations do not grant development or redistribution rights. See the [use and copyright notice](COPYRIGHT.md).
+**Rights in original code are reserved; further development requires the author's prior written permission.** Officially released test builds may be evaluated free of charge. Application source and development history remain private. GitHub platform rights and third-party licenses apply separately. See the [use and copyright notice](COPYRIGHT.md).
+
+Recognition, translation, and analysis can be wrong, especially with names and numbers. Check important details against the video, and use only content you are entitled to access and process.

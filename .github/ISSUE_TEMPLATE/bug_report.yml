@@ -1,0 +1,46 @@
+name: 问题反馈 / Bug report
+description: 描述复现步骤，帮助定位问题 / Help us reproduce an issue
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        这里是公开页面。请勿上传密钥、账号、私人路径、私人视频或完整字幕。诊断包应先在软件内预览并人工检查。
+        This page is public. Review diagnostics before sharing; omit credentials, account data, private paths, videos, and full transcripts.
+        [反馈指南 / Reporting guide](https://github.com/Elviszhuoyu/VidSage-Releases/blob/main/docs/FEEDBACK.zh-CN.md)
+  - type: input
+    id: version
+    attributes:
+      label: VidSage 版本 / Version
+      placeholder: "例如 / e.g. 0.1.77"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 发生了什么 / What happened?
+      description: 写清操作步骤、预期结果和实际结果 / Steps, expected result, and actual result
+      placeholder: |
+        1. 打开了什么 / What I opened:
+        2. 做了什么 / What I did:
+        3. 预期与实际 / Expected and actual:
+        是否可以重复 / Does it repeat:
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 环境与发生时间 / Environment and time
+      description: 可选。Windows版本、CPU/内存/显卡、所选模型、视频时长或平台；不要填硬件序列号 / Optional system details, model, duration or platform; no hardware serial numbers
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 补充材料 / Additional information
+      description: 可选。仅附适合公开的截图或检查后的诊断ZIP / Optional screenshots or a reviewed diagnostic ZIP suitable for public sharing
+  - type: checkboxes
+    id: public_review
+    attributes:
+      label: 公开前检查 / Before posting
+      options:
+        - label: 我已检查文字和附件，确认可以公开。 / I reviewed the text and attachments and confirm they can be public.
+          required: true
