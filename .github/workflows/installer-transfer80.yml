@@ -1,0 +1,22 @@
+name: Transfer exact installer 0.1.80
+on:
+  push:
+    branches: [codex/source-delivery-0.1.80]
+    paths: [tools/installer_transfer80.py, .github/workflows/installer-transfer80.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: installer-transfer-0.1.80
+  cancel-in-progress: false
+jobs:
+  installer:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 150
+    steps:
+      - name: Reassemble and verify original installer
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api "repos/$GITHUB_REPOSITORY/contents/tools/installer_transfer80.py?ref=$GITHUB_SHA" --jq .content | base64 --decode > installer_transfer80.py
+          python3 installer_transfer80.py
