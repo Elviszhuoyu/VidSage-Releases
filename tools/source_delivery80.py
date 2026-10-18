@@ -62,6 +62,15 @@ def extract_zst(archive, destination):
 def record(path):
     return {'filename': path.name, 'bytes': path.stat().st_size, 'sha256': sha(path)}
 
+# A local uploader may still be completing this one small input asset.
+for attempt in range(40):
+    release = json.loads(subprocess.check_output(['gh', 'api', 'repos/' + REPO + '/releases/416487307']))
+    if any(a['name'] == INPUT and a['state'] == 'uploaded' for a in release['assets']):
+        break
+    print('Waiting for the verified build-input asset', flush=True)
+    time.sleep(30)
+else:
+    raise RuntimeError('Build input did not finish uploading within 20 minutes')
 run('gh', 'release', 'download', TAG, '--repo', REPO, '--pattern', INPUT, '--dir', str(ROOT))
 assert sha(ROOT / INPUT) == INPUT_SHA
 with zipfile.ZipFile(ROOT / INPUT) as z:
