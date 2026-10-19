@@ -2,11 +2,19 @@
 <h1 align="center">VidSage 脉络</h1>
 <p align="center"><strong>看视频，也理清思路。</strong><br>本地优先的 Windows AI 视频学习播放器：字幕转写、视频总结、时间戳问答与笔记。</p>
 <p align="center"><strong>简体中文</strong> · <a href="README.en.md"><strong>English</strong></a></p>
-<p align="center"><img src="docs/assets/release/windows.svg" alt="Windows 11 x64"> <img src="docs/assets/release/languages.svg" alt="中文界面 · English docs"> <img src="docs/assets/release/preview.svg" alt="0.1.92 Public preview"></p>
+<p align="center"><img src="docs/assets/release/windows.svg" alt="Windows 11 x64"> <img src="docs/assets/release/languages.svg" alt="中文界面 · English docs"> <img src="docs/assets/release/preview.svg" alt="0.1.95 Preview"></p>
 
 <p align="center"><a href="docs/GETTING_STARTED.zh-CN.md">开始使用</a> · <a href="docs/HARDWARE.zh-CN.md">硬件与模型</a> · <a href="docs/FEEDBACK.zh-CN.md">反馈问题</a> · <a href="docs/PRIVACY.md">隐私与授权</a></p>
 
-> **0.1.92 安装与分析修复测试版。** 从 [GitHub Release](https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.1.92) 下载完整 Setup、SHA256 和第三方源码材料。安装包未签名，安装前请核对来源。下图来自本版本实际运行界面。
+> **0.1.95 公开测试版。** [下载安装包](https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.1.95) · [查看完整功能](docs/FEATURES.zh-CN.md)。本版补齐 AI 失败后继续观看、稍后重试和手动换服务，带来新的无痕播放体验及分析、安装修复。
+
+## 不用在视频、AI 和笔记之间来回切换
+
+- **一句没听懂，就从这一句问。** 选中字幕、指定章节或围绕全片提问，回答附有可回看的原文时间。
+- **长视频不只压成几行摘要。** 七种分析方式分别照顾速读、推理、课程、财经和动手实践，已有报告可以继续追问。
+- **字幕和资料留在自己手里。** 本地生成字幕、校正、双语对照、时间笔记和知识库检索放在同一个播放器里。
+- **临时观看有独立的空间。** 无痕播放使用单独的队列和登录环境，退出后清理本次资料，不混进日常记录。
+- **AI 暂时用不了，也不打断观看。** 保留原文和已有成果，自己决定什么时候重试、用哪个服务。
 
 ## 为什么做 VidSage
 
@@ -16,7 +24,7 @@
 
 这就是我做 VidSage 的起点。也希望它能让你的学习过程轻松一点。
 
-![VidSage 0.1.92 普通播放，播放列表旁的无痕入口](docs/assets/release/home-0.1.92.png)
+![VidSage 0.1.95 普通播放，播放列表旁的无痕入口](docs/assets/release/home-0.1.95.png)
 
 ## 无痕播放：临时观看，退出后清理
 
@@ -24,7 +32,7 @@
 
 字幕、分析、问答与临时笔记仅供本次会话使用，不加入普通历史或知识库。退出后先结束会话进程并清理临时数据，再恢复普通播放。石墨灰界面与柔和过渡帮助辨认当前模式，减少动态效果设置也会生效。
 
-![VidSage 0.1.92 无痕播放的实际界面](docs/assets/release/private-0.1.92.png)
+![VidSage 0.1.95 无痕播放的实际界面](docs/assets/release/private-0.1.95.png)
 
 无痕模式仍可能写入专用临时目录，不提供磁盘取证不可恢复或网络匿名保证；在线平台及云端 AI 仍按各自规则处理数据。详见[隐私说明](docs/PRIVACY.md)。
 
@@ -63,6 +71,12 @@
 标准包包含播放器、核心、本地字幕运行库和 base 模型，无需开发环境；千问运行环境及其模型另行选择。新版本可在「关于」中检查、下载完整 Setup 并确认安装；从旧版首次升级也可以直接下载运行 Setup。升级保留个人资料及模型。卸载时可分别选择清理缓存、默认目录模型及个人资料，默认保留；自定义目录和外部导出文件保留。已修复卸载后仅有 Python 缓存残留导致原位置无法重装的问题。
 
 [安装、校验与开始使用 →](docs/GETTING_STARTED.zh-CN.md)
+
+## 使用 AI 服务前，先了解额度
+
+Gemini API 免费层可能受到模型、地区、请求频率和每日额度限制。我们的开发测试遇到过 **503 暂时不可用、长内容返回不完整、结果或引用需要重新核对**。连接测试通过不等于每次分析和翻译都能完成。
+
+其他 API 和 ChatGPT 订阅也有各自限制。VidSage 不会自动切到收费服务；失败后可以继续看原文、稍后重试，或手动更换服务。本地播放、已有字幕和笔记不依赖云端 AI。更多功能与使用边界见[完整功能说明](docs/FEATURES.zh-CN.md)。
 
 ## 隐私与反馈
 
