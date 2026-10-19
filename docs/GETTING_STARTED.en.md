@@ -6,27 +6,27 @@ VidSage combines video, subtitles, AI analysis, and notes. The app currently use
 
 ## Install
 
-The current preview is **0.1.80 for Windows 11 x64**. Download `VidSage-0.1.80-win11-x64-Setup.exe` from the [official release page](https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.1.80). You only need this EXE to use the app. The source archives are for developers who need them.
+VidSage supports **Windows 11 x64**. Choose a version on the [official releases page](https://github.com/Elviszhuoyu/VidSage-Releases/releases) and download its Setup.exe installer. You only need this EXE to use the app. The source archives are for developers who need them.
 
 The installer includes the player, local caption libraries, and the base model. No development tools are needed. Allow at least 6 GB for installation and extraction.
 
-This first release is unsigned. Windows may show “Unknown publisher” or “Windows protected your PC.” Check the download source and checksum before installing:
+1. Double-click the downloaded Setup EXE.
+2. Choose a program folder, read the license, and complete the installation. The default folder is ready to use; a dedicated folder on another drive is optional.
+3. Launch VidSage and follow or skip the setup guide.
 
-1. Run this in PowerShell, replacing the path with the downloaded file:
+The current preview installer is unsigned. Windows may show “Unknown publisher” or “Windows protected your PC.” After confirming that the file came from the official release page above, you may choose **More info → Run anyway** if offered. If malware is reported, the option is unavailable, or the source is unclear, stop and report the message. Do not disable system protection.
 
-   ```powershell
-   Get-FileHash -LiteralPath "full path to the installer" -Algorithm SHA256
-   ```
+### Optional: verify the checksum
 
-2. Compare the full result with the SHA256 below. If it differs, stop and check the download source.
-3. Once verified, you may choose **More info → Run anyway** if Windows offers it. If malware is reported, the option is unavailable, or the source is unclear, stop and report the message. Do not disable system protection.
-4. Run the installer, choose a folder, and follow the prompts.
+To check that the download matches the release, run this in PowerShell, replacing the path with the downloaded file:
 
-SHA256 for the 0.1.80 installer:
+```powershell
+Get-FileHash -LiteralPath "full path to the installer" -Algorithm SHA256
+```
 
-`aa9d787103af26e4771dc499dbea0e17b485e61a8911440e64a5fc5e55b2a549`
+The full result should match the installer entry in SHA256SUMS.txt on that version's release page. If it differs, stop and check the download source.
 
-A checksum checks that the file matches the release. It does not replace a digital signature or security checks. Use the matching release page for other versions.
+A checksum verifies the downloaded file. It does not replace a digital signature or security checks.
 
 ## First use
 
@@ -36,6 +36,8 @@ Follow the setup guide at the top right, or skip it. Reopen it through **关于 
 2. Use existing subtitles or import a subtitle file. If there are none, select base in the caption task panel and start generation.
 3. For analysis, questions, or translation, configure your API, connect ChatGPT, or choose a supported local service under **AI 服务 (AI services)**. Cloud services may charge separately. VidSage asks for permission before sending content and remembers that permission for the selected service.
 4. Open **AI 学习 (AI Learning)** to analyze the subtitles or ask questions. Select a timestamp to return to the video and save useful content as notes.
+
+Whole-video questions can continue a discussion of the current report and recent answers. Video explanations retain subtitle references; concept explanations and hypothetical examples have separate labels. The AI report is not video evidence. Report and conversation context are sent with the question to your selected service; see [Privacy](PRIVACY.md).
 
 Optional Bilibili sign-in provides access to media and subtitles your account may view. YouTube currently supports public videos.
 
@@ -47,14 +49,25 @@ Local caption generation needs no additional AI account. Larger models download 
 |---|---|
 | AI 服务 (AI services) | APIs, authorization, services, models, and connection checks |
 | 媒体账号 (Media accounts) | Platform sign-in and sessions |
-| 字幕 (Subtitles) | Display, translation, local models, and storage |
+| 字幕 (Subtitles) | Display, translation, and local models |
 | 播放器 (Player) | Playback, appearance, icons, and local records |
+| 存储 (Storage) | Model and cache locations, disk usage, and cache cleanup |
+
+Default model and cache locations are ready to use. To change them, open **设置 → 存储 (Settings → Storage)** and select a new location. VidSage copies and verifies files before switching; the originals remain. Cache cleanup shows the proposed files first and excludes subtitles, notes, and account data.
 
 **关于 → 支持作者 (About → Support the author)** offers optional donations, which do not affect features.
 
+## Private playback
+
+Select the hat-and-glasses icon beside the left playlist heading. The app switches to graphite gray and displays **无痕播放 (Private playback)** with an exit control beside the product name. Your ordinary queue stays intact, while the private session starts with an empty temporary queue. Open local media or online links and use subtitles, analysis, questions, and temporary notes.
+
+The previous picture remains visible while the next window prepares. A soft transition runs when it is ready, and reverses on exit. Reduced-motion settings use a short fade. Transition pictures stay in memory and are not saved as screenshot files.
+
+Exiting clears session data and restores the ordinary queue. This version does not export private subtitles or results. Platform and ChatGPT sign-in are separate, and cloud processing requires consent for this session. See [Privacy](PRIVACY.md) for storage and cleanup boundaries.
+
 ## Update or uninstall
 
-Use **关于 → 更新与安装 (About → Updates and installation)** to check for updates and open the download page. Close VidSage, then run the new installer in the same installation folder. The app does not download or install updates automatically.
+Opening **关于 (About)** checks for updates; you can also check beside the version. Choose to download the full installer, then confirm closing and installing after verification. Finish active tasks or unsaved settings first. The first upgrade from 0.1.78 or 0.1.80 still requires downloading and running the new Setup from the official releases page.
 
 Uninstall through **Windows Settings → Apps → Installed apps → VidSage**. Updates and uninstall preserve captions, notes, models, account data, and diagnostic records by default, so you can reuse them after reinstalling.
 
