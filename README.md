@@ -1,6 +1,6 @@
 <p align="center"><img src="docs/assets/release/app-icon.svg" width="64" height="64" alt="VidSage"></p>
 <h1 align="center">VidSage 脉络</h1>
-<p align="center"><strong>看视频，也理清思路。</strong><br>视频学习播放器，把字幕、笔记与 AI 分析放在视频旁边。</p>
+<p align="center"><strong>看视频，也理清思路。</strong><br>本地优先的 Windows AI 视频学习播放器：字幕转写、视频总结、时间戳问答与笔记。</p>
 <p align="center"><strong>简体中文</strong> · <a href="README.en.md"><strong>English</strong></a></p>
 <p align="center"><img src="docs/assets/release/windows.svg" alt="Windows 11 x64"> <img src="docs/assets/release/languages.svg" alt="中文界面 · English docs"> <img src="docs/assets/release/preview.svg" alt="0.1.89 Public preview"></p>
 
@@ -29,6 +29,8 @@
 无痕模式仍可能写入专用临时目录，不提供磁盘取证不可恢复或网络匿名保证；在线平台及云端 AI 仍按各自规则处理数据。详见[隐私说明](docs/PRIVACY.md)。
 
 ## 从观看到理解
+
+支持本地视频，以及受支持的 B站 / Bilibili 和 YouTube 公开视频。Whisper 本地语音转写生成带时间戳字幕；AI 视频总结与字幕问答提供回看入口，便于核对课程、教程和长视频中的依据。无痕播放使用独立的临时会话。
 
 - 使用平台已有字幕、导入字幕，或在本机生成字幕。
 - 根据字幕分析、提问，点击时间回到原视频核对。
