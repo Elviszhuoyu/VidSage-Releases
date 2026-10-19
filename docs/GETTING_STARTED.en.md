@@ -69,7 +69,7 @@ Exiting clears session data and restores the ordinary queue. This version does n
 
 Opening **关于 (About)** checks for updates; you can also check beside the version. Choose to download the full installer, then confirm closing and installing after verification. Finish active tasks or unsaved settings first. The first upgrade from 0.1.78 or 0.1.80 still requires downloading and running the new Setup from the official releases page.
 
-Uninstall through **Windows Settings → Apps → Installed apps → VidSage**. Updates and uninstall preserve captions, notes, models, account data, and diagnostic records by default, so you can reuse them after reinstalling.
+Uninstall through **Windows Settings → Apps → Installed apps → VidSage**. Updates preserve your data. Starting with 0.1.90, interactive uninstall offers three independent choices: caches and diagnostics, downloaded models in the default folder, and personal data and sign-ins. All are unchecked by default; deleting personal data requires a second confirmation and cannot be undone. Custom or relocated model/cache folders, development-preview data, and exported files remain untouched. Silent uninstall always preserves user data.
 
 ## Report a problem
 
