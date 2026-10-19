@@ -2,11 +2,11 @@
 <h1 align="center">VidSage 脉络</h1>
 <p align="center"><strong>看视频，也理清思路。</strong><br>本地优先的 Windows AI 视频学习播放器：字幕转写、视频总结、时间戳问答与笔记。</p>
 <p align="center"><strong>简体中文</strong> · <a href="README.en.md"><strong>English</strong></a></p>
-<p align="center"><img src="docs/assets/release/windows.svg" alt="Windows 11 x64"> <img src="docs/assets/release/languages.svg" alt="中文界面 · English docs"> <img src="docs/assets/release/preview.svg" alt="0.1.89 Public preview"></p>
+<p align="center"><img src="docs/assets/release/windows.svg" alt="Windows 11 x64"> <img src="docs/assets/release/languages.svg" alt="中文界面 · English docs"> <img src="docs/assets/release/preview.svg" alt="0.1.91 Public preview"></p>
 
 <p align="center"><a href="docs/GETTING_STARTED.zh-CN.md">开始使用</a> · <a href="docs/HARDWARE.zh-CN.md">硬件与模型</a> · <a href="docs/FEEDBACK.zh-CN.md">反馈问题</a> · <a href="docs/PRIVACY.md">隐私与授权</a></p>
 
-> **0.1.89 无痕播放测试版。** 从 [GitHub Release](https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.1.89) 下载完整 Setup、SHA256 和第三方源码材料。安装包未签名，安装前请核对来源。下图来自本版本实际运行界面。
+> **0.1.91 安装与分析修复测试版。** 从 [GitHub Release](https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.1.91) 下载完整 Setup、SHA256 和第三方源码材料。安装包未签名，安装前请核对来源。下图来自本版本实际运行界面。
 
 ## 为什么做 VidSage
 
@@ -16,7 +16,7 @@
 
 这就是我做 VidSage 的起点。也希望它能让你的学习过程轻松一点。
 
-![VidSage 0.1.89 普通播放，播放列表旁的无痕入口](docs/assets/release/home-0.1.89.png)
+![VidSage 0.1.91 普通播放，播放列表旁的无痕入口](docs/assets/release/home-0.1.91.png)
 
 ## 无痕播放：临时观看，退出后清理
 
@@ -24,7 +24,7 @@
 
 字幕、分析、问答与临时笔记仅供本次会话使用，不加入普通历史或知识库。退出后先结束会话进程并清理临时数据，再恢复普通播放。石墨灰界面与柔和过渡帮助辨认当前模式，减少动态效果设置也会生效。
 
-![VidSage 0.1.89 无痕播放的实际界面](docs/assets/release/private-0.1.89.png)
+![VidSage 0.1.91 无痕播放的实际界面](docs/assets/release/private-0.1.91.png)
 
 无痕模式仍可能写入专用临时目录，不提供磁盘取证不可恢复或网络匿名保证；在线平台及云端 AI 仍按各自规则处理数据。详见[隐私说明](docs/PRIVACY.md)。
 
@@ -60,7 +60,7 @@
 
 从[官方下载页](https://github.com/Elviszhuoyu/VidSage-Releases/releases)获取完整 Setup；需要时可核对随页提供的 SHA256。首版未签名，Windows 可能显示未知发布者或安全提示；部分设备策略可能阻止运行。请先核对下载来源，遇到不明或恶意软件提示时停止安装，不要关闭系统防护。
 
-标准包包含播放器、核心、本地字幕运行库和 base 模型，无需开发环境；千问运行环境及其模型另行选择。新版本可在「关于」中检查、下载完整 Setup 并确认安装；从旧版首次升级也可以直接下载运行 Setup。升级和标准卸载默认保留个人资料及模型。
+标准包包含播放器、核心、本地字幕运行库和 base 模型，无需开发环境；千问运行环境及其模型另行选择。新版本可在「关于」中检查、下载完整 Setup 并确认安装；从旧版首次升级也可以直接下载运行 Setup。升级保留个人资料及模型。卸载时可分别选择清理缓存、默认目录模型及个人资料，默认保留；自定义目录和外部导出文件保留。已修复卸载后仅有 Python 缓存残留导致原位置无法重装的问题。
 
 [安装、校验与开始使用 →](docs/GETTING_STARTED.zh-CN.md)
 

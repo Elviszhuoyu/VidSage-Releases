@@ -2,11 +2,11 @@
 <h1 align="center">VidSage</h1>
 <p align="center"><strong>Watch, understand, and return to the source.</strong><br>A local-first Windows AI video player with Whisper transcription, video summaries, timestamped Q&A and notes.</p>
 <p align="center"><a href="README.md"><strong>简体中文</strong></a> · <strong>English</strong></p>
-<p align="center"><img src="docs/assets/release/windows.svg" alt="Windows 11 x64"> <img src="docs/assets/release/languages.svg" alt="中文界面 · English docs"> <img src="docs/assets/release/preview.svg" alt="0.1.89 Public preview"></p>
+<p align="center"><img src="docs/assets/release/windows.svg" alt="Windows 11 x64"> <img src="docs/assets/release/languages.svg" alt="中文界面 · English docs"> <img src="docs/assets/release/preview.svg" alt="0.1.91 Public preview"></p>
 
 <p align="center"><a href="docs/GETTING_STARTED.en.md">Get started</a> · <a href="docs/HARDWARE.en.md">Hardware & models</a> · <a href="docs/FEEDBACK.en.md">Report a problem</a> · <a href="docs/PRIVACY.md">Privacy</a></p>
 
-> **0.1.89 private playback preview.** Download the complete Setup, SHA256 checksums, and third-party source materials from [GitHub Release](https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.1.89). This installer is unsigned; check its source before installing. Screenshots show the actual application running this version.
+> **0.1.91 installation and analysis fixes.** Download the complete Setup, SHA256 checksums, and third-party source materials from [GitHub Release](https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.1.91). This installer is unsigned; check its source before installing. Screenshots show the actual application running this version.
 
 The app currently has a **Simplified Chinese interface**. English documentation is available; an English interface is planned for a later version.
 
@@ -18,7 +18,7 @@ AI helped me break difficult concepts into smaller pieces, ask for another expla
 
 That is where VidSage began. I hope it makes learning a little easier for you, too.
 
-![VidSage 0.1.89 ordinary playback and private entry beside the playlist](docs/assets/release/home-0.1.89.png)
+![VidSage 0.1.91 ordinary playback and private entry beside the playlist](docs/assets/release/home-0.1.91.png)
 
 ## Private playback for temporary viewing
 
@@ -26,7 +26,7 @@ Start from the hat-and-glasses icon beside the playlist heading. Your ordinary q
 
 Subtitles, analysis, questions, and temporary notes stay within that session, outside ordinary history and the knowledge library. Exiting ends the session process and clears temporary data before returning to ordinary playback. A graphite interface and soft transition identify the mode; reduced-motion settings are respected.
 
-![Actual VidSage 0.1.89 private playback interface](docs/assets/release/private-0.1.89.png)
+![Actual VidSage 0.1.91 private playback interface](docs/assets/release/private-0.1.91.png)
 
 Private playback may write to a dedicated temporary directory. It does not guarantee forensic erasure or network anonymity. Online platforms and cloud AI services retain their own data practices. See [Privacy](docs/PRIVACY.md).
 
@@ -60,7 +60,7 @@ Allow at least 6 GB for installation and temporary extraction. Model file size i
 
 Obtain the complete Setup from the [official releases page](https://github.com/Elviszhuoyu/VidSage-Releases/releases). SHA256 verification is available if you want to check the downloaded file. The first preview is unsigned. Windows may show an unknown-publisher or security warning, and some device policies may prevent execution. Verify the source first; stop if you encounter an unexpected or malware warning. Do not disable system protection.
 
-The standard installer includes the player, core, local caption runtime, and base model; no development environment is required. Qwen models and their environment are separate options. New versions can check for updates, download a complete Setup, and ask you to confirm installation through About. Older versions can upgrade by downloading and running Setup. Updates and standard uninstall preserve personal data and models by default.
+The standard installer includes the player, core, local caption runtime, and base model; no development environment is required. Qwen models and their environment are separate options. New versions can check for updates, download a complete Setup, and ask you to confirm installation through About. Older versions can upgrade by downloading and running Setup. Updates preserve your data. Interactive uninstall offers separate cache, default-model and personal-data choices, all unchecked by default. Custom folders and exported files stay untouched. Reinstalling over leftover Python bytecode no longer blocks setup.
 
 [Installation, checksums, and getting started →](docs/GETTING_STARTED.en.md)
 
