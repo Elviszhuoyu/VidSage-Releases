@@ -2,11 +2,11 @@
 <h1 align="center">VidSage 脉络</h1>
 <p align="center"><strong>看视频，也理清思路。</strong><br>本地优先的 Windows AI 视频学习播放器：字幕转写、视频总结、时间戳问答与笔记。</p>
 <p align="center"><strong>简体中文</strong> · <a href="README.en.md"><strong>English</strong></a></p>
-<p align="center"><img src="docs/assets/release/windows.svg" alt="Windows 11 x64"> <img src="docs/assets/release/languages.svg" alt="中文界面 · English docs"> <img src="docs/assets/release/preview.svg" alt="0.1.91 Public preview"></p>
+<p align="center"><img src="docs/assets/release/windows.svg" alt="Windows 11 x64"> <img src="docs/assets/release/languages.svg" alt="中文界面 · English docs"> <img src="docs/assets/release/preview.svg" alt="0.1.92 Public preview"></p>
 
 <p align="center"><a href="docs/GETTING_STARTED.zh-CN.md">开始使用</a> · <a href="docs/HARDWARE.zh-CN.md">硬件与模型</a> · <a href="docs/FEEDBACK.zh-CN.md">反馈问题</a> · <a href="docs/PRIVACY.md">隐私与授权</a></p>
 
-> **0.1.91 安装与分析修复测试版。** 从 [GitHub Release](https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.1.91) 下载完整 Setup、SHA256 和第三方源码材料。安装包未签名，安装前请核对来源。下图来自本版本实际运行界面。
+> **0.1.92 安装与分析修复测试版。** 从 [GitHub Release](https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.1.92) 下载完整 Setup、SHA256 和第三方源码材料。安装包未签名，安装前请核对来源。下图来自本版本实际运行界面。
 
 ## 为什么做 VidSage
 
@@ -16,7 +16,7 @@
 
 这就是我做 VidSage 的起点。也希望它能让你的学习过程轻松一点。
 
-![VidSage 0.1.91 普通播放，播放列表旁的无痕入口](docs/assets/release/home-0.1.91.png)
+![VidSage 0.1.92 普通播放，播放列表旁的无痕入口](docs/assets/release/home-0.1.92.png)
 
 ## 无痕播放：临时观看，退出后清理
 
@@ -24,7 +24,7 @@
 
 字幕、分析、问答与临时笔记仅供本次会话使用，不加入普通历史或知识库。退出后先结束会话进程并清理临时数据，再恢复普通播放。石墨灰界面与柔和过渡帮助辨认当前模式，减少动态效果设置也会生效。
 
-![VidSage 0.1.91 无痕播放的实际界面](docs/assets/release/private-0.1.91.png)
+![VidSage 0.1.92 无痕播放的实际界面](docs/assets/release/private-0.1.92.png)
 
 无痕模式仍可能写入专用临时目录，不提供磁盘取证不可恢复或网络匿名保证；在线平台及云端 AI 仍按各自规则处理数据。详见[隐私说明](docs/PRIVACY.md)。
 
@@ -37,7 +37,7 @@
 - 留下笔记与分析资料，之后继续阅读和检索。
 - 选择 API、ChatGPT 云授权或受支持的本机服务。媒体账号可跳过，本地播放不依赖 AI 账号。
 
-知识拆解区分视频内容解读、概念补充与假设示例，保留解释过程和使用边界。全片问答可继续讨论当前报告中的例子；AI 报告不会成为视频原文证据，回答保留可跳转的字幕引用。
+长文复盘保留按主题展开的论证，财经复盘区分主讲人判断、证据和成立条件，章节导航仍可回看。行动清单写清操作与可观察的完成标准。知识拆解区分视频内容解读、概念补充与假设示例，保留解释过程和使用边界。全片问答可继续讨论当前报告中的例子；AI 报告不会成为视频原文证据，回答保留可跳转的字幕引用。
 
 首次打开可跟随六步上手指引，也可跳过。设置分为 AI 服务、媒体账号、字幕、播放器和存储。千问是可选项，模型和运行环境均按需准备，不随标准包下载。
 
