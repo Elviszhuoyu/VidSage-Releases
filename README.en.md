@@ -2,11 +2,11 @@
 <h1 align="center">VidSage</h1>
 <p align="center"><strong>Watch, understand, and return to the source.</strong><br>A local-first Windows AI video player with Whisper transcription, video summaries, timestamped Q&A and notes.</p>
 <p align="center"><a href="README.md"><strong>简体中文</strong></a> · <strong>English</strong></p>
-<p align="center"><img src="docs/assets/release/windows.svg" alt="Windows 11 x64"> <img src="docs/assets/release/languages.svg" alt="中文界面 · English docs"> <img src="docs/assets/release/preview.svg" alt="0.1.95 Preview"></p>
+<p align="center"><img src="docs/assets/release/windows.svg" alt="Windows 11 x64"> <img src="docs/assets/release/languages.svg" alt="中文界面 · English docs"> <img src="docs/assets/release/preview.svg" alt="0.1.96 Preview"></p>
 
 <p align="center"><a href="docs/GETTING_STARTED.en.md">Get started</a> · <a href="docs/HARDWARE.en.md">Hardware & models</a> · <a href="docs/FEEDBACK.en.md">Report a problem</a> · <a href="docs/PRIVACY.md">Privacy</a></p>
 
-> **0.1.95 public preview.** [Download the installer](https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.1.95) · [Full feature list (Chinese)](docs/FEATURES.zh-CN.md). This release adds recovery after AI failures, along with private playback, analysis improvements and installation fixes.
+> **0.1.96: reliable in-app updates.** [Download](https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.1.96) · [Full features (Chinese)](docs/FEATURES.zh-CN.md). Checks once on normal startup, then lets you download and confirm installation inside the app. **If an older version cannot check for updates, run this installer manually once** to obtain the new update checker.
 
 The app currently has a **Simplified Chinese interface**. English documentation is available; an English interface is planned for a later version.
 
@@ -26,7 +26,7 @@ AI helped me break difficult concepts into smaller pieces, ask for another expla
 
 That is where VidSage began. I hope it makes learning a little easier for you, too.
 
-![VidSage 0.1.95 ordinary playback and private entry beside the playlist](docs/assets/release/home-0.1.95.png)
+![VidSage 0.1.96 ordinary playback and private entry beside the playlist](docs/assets/release/home-0.1.96.png)
 
 ## Private playback for temporary viewing
 
@@ -34,7 +34,7 @@ Start from the hat-and-glasses icon beside the playlist heading. Your ordinary q
 
 Subtitles, analysis, questions, and temporary notes stay within that session, outside ordinary history and the knowledge library. Exiting ends the session process and clears temporary data before returning to ordinary playback. A graphite interface and soft transition identify the mode; reduced-motion settings are respected.
 
-![Actual VidSage 0.1.95 private playback interface](docs/assets/release/private-0.1.95.png)
+![Actual VidSage 0.1.96 private playback interface](docs/assets/release/private-0.1.96.png)
 
 Private playback may write to a dedicated temporary directory. It does not guarantee forensic erasure or network anonymity. Online platforms and cloud AI services retain their own data practices. See [Privacy](docs/PRIVACY.md).
 
@@ -102,3 +102,7 @@ These codes are also available in **关于 → 支持作者 (About → Support t
 **Rights in original code are reserved; further development requires the author's prior written permission.** Officially released test builds may be evaluated free of charge. Application source and development history remain private. GitHub platform rights and third-party licenses apply separately. See the [use and copyright notice](COPYRIGHT.md).
 
 Recognition, translation, and analysis can be wrong, especially with names and numbers. Check important details against the video, and use only content you are entitled to access and process.
+
+## Development workspace
+
+Read [AGENTS.md](AGENTS.md), the [architecture contract](docs/ARCHITECTURE_CONTRACT.md), and the [current task](docs/CURRENT_TASK.md) before development. Public product information and future downloads are maintained separately in [VidSage-Releases](https://github.com/Elviszhuoyu/VidSage-Releases).
