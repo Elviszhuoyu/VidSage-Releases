@@ -6,7 +6,7 @@
 
 <p align="center"><a href="docs/GETTING_STARTED.zh-CN.md">开始使用</a> · <a href="docs/HARDWARE.zh-CN.md">硬件与模型</a> · <a href="docs/FEEDBACK.zh-CN.md">反馈问题</a> · <a href="docs/PRIVACY.md">隐私与授权</a></p>
 
-> **0.1.96 应用内更新修复版。** [下载安装包](https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.1.96) · [完整功能](docs/FEATURES.zh-CN.md)。正常启动自动检查，发现新版后可在软件内下载并确认安装。**旧版仍无法检查更新时，先手动安装本版一次**，之后不必每次去GitHub找包。
+> **0.1.96 应用内更新修复版。** [下载安装包](https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.1.96) · [完整功能](docs/FEATURES.zh-CN.md)。正常启动自动检查，发现新版后可在软件内下载并确认安装。**0.1.95及更早版本建议先手动安装本版一次**，之后不必每次去GitHub找包。
 
 ## 不用在视频、AI 和笔记之间来回切换
 
