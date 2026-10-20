@@ -2,11 +2,11 @@
 <h1 align="center">VidSage 脉络</h1>
 <p align="center"><strong>看视频，也理清思路。</strong><br>本地优先的 Windows AI 视频学习播放器：字幕转写、视频总结、时间戳问答与笔记。</p>
 <p align="center"><strong>简体中文</strong> · <a href="README.en.md"><strong>English</strong></a></p>
-<p align="center"><img src="docs/assets/release/windows.svg" alt="Windows 11 x64"> <img src="docs/assets/release/languages.svg" alt="中文界面 · English docs"> <img src="docs/assets/release/preview.svg" alt="0.1.95 Preview"></p>
+<p align="center"><img src="docs/assets/release/windows.svg" alt="Windows 11 x64"> <img src="docs/assets/release/languages.svg" alt="中文界面 · English docs"> <img src="docs/assets/release/preview.svg" alt="0.1.96 Preview"></p>
 
 <p align="center"><a href="docs/GETTING_STARTED.zh-CN.md">开始使用</a> · <a href="docs/HARDWARE.zh-CN.md">硬件与模型</a> · <a href="docs/FEEDBACK.zh-CN.md">反馈问题</a> · <a href="docs/PRIVACY.md">隐私与授权</a></p>
 
-> **0.1.95 公开测试版。** [下载安装包](https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.1.95) · [查看完整功能](docs/FEATURES.zh-CN.md)。本版补齐 AI 失败后继续观看、稍后重试和手动换服务，带来新的无痕播放体验及分析、安装修复。
+> **0.1.96 应用内更新修复版。** [下载安装包](https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.1.96) · [完整功能](docs/FEATURES.zh-CN.md)。正常启动自动检查，发现新版后可在软件内下载并确认安装。**旧版仍无法检查更新时，先手动安装本版一次**，之后不必每次去GitHub找包。
 
 ## 不用在视频、AI 和笔记之间来回切换
 
@@ -24,7 +24,7 @@
 
 这就是我做 VidSage 的起点。也希望它能让你的学习过程轻松一点。
 
-![VidSage 0.1.95 普通播放，播放列表旁的无痕入口](docs/assets/release/home-0.1.95.png)
+![VidSage 0.1.96 普通播放，播放列表旁的无痕入口](docs/assets/release/home-0.1.96.png)
 
 ## 无痕播放：临时观看，退出后清理
 
@@ -32,7 +32,7 @@
 
 字幕、分析、问答与临时笔记仅供本次会话使用，不加入普通历史或知识库。退出后先结束会话进程并清理临时数据，再恢复普通播放。石墨灰界面与柔和过渡帮助辨认当前模式，减少动态效果设置也会生效。
 
-![VidSage 0.1.95 无痕播放的实际界面](docs/assets/release/private-0.1.95.png)
+![VidSage 0.1.96 无痕播放的实际界面](docs/assets/release/private-0.1.96.png)
 
 无痕模式仍可能写入专用临时目录，不提供磁盘取证不可恢复或网络匿名保证；在线平台及云端 AI 仍按各自规则处理数据。详见[隐私说明](docs/PRIVACY.md)。
 
@@ -102,3 +102,7 @@ Gemini API 免费层可能受到模型、地区、请求频率和每日额度限
 **原创代码保留权利，二次开发须事先取得作者书面授权。** 正式发布的官方测试包可免费体验。应用源码和开发历史保持私有；GitHub 平台内权利及第三方许可证另行适用。详见[使用与版权声明](COPYRIGHT.md)。
 
 识别、翻译与分析可能出错，尤其是数字和专有名词。重要内容请回到原视频核对；仅处理你有权访问与使用的内容。
+
+## 开发工作区
+
+开发前阅读 [AGENTS.md](AGENTS.md)、[架构合同](docs/ARCHITECTURE_CONTRACT.md)和[当前任务](docs/CURRENT_TASK.md)。公开介绍和后续下载位于 [VidSage-Releases](https://github.com/Elviszhuoyu/VidSage-Releases)。

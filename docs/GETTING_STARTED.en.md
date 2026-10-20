@@ -39,6 +39,8 @@ Follow the setup guide at the top right, or skip it. Reopen it through **关于 
 
 Whole-video questions can continue a discussion of the current report and recent answers. Video explanations retain subtitle references; concept explanations and hypothetical examples have separate labels. The AI report is not video evidence. Report and conversation context are sent with the question to your selected service; see [Privacy](PRIVACY.md).
 
+Gemini model availability and free quotas depend on your project. You can select Lite for analysis and Q&A without enabling billing for this local test. Per-cue translation quality varies by model; languages with a different word order may reorder fragments. Keep the original track and review the translation rather than treating generation completion as semantic acceptance.
+
 Optional Bilibili sign-in provides access to media and subtitles your account may view. YouTube currently supports public videos.
 
 Local caption generation needs no additional AI account. Larger models download only when you select them. See [system requirements and models](HARDWARE.en.md).
@@ -78,3 +80,6 @@ Use **关于 → 报告问题 (About → Report a problem)**, review the content
 The ZIP stays on your computer until you choose to share it. Check text and images for accounts, keys, private paths, and other sensitive information first. Follow the [feedback guide](FEEDBACK.en.md).
 
 Captions and AI results can be wrong, especially names and numbers. Check them against the video.
+
+
+From 0.1.96, normal startup checks for updates once. Use the top-bar notice or About to download, verify and confirm installation. Users on 0.1.95 or earlier must run the 0.1.96 installer manually once. Personal data and models are retained; changed terms require the installation wizard.
