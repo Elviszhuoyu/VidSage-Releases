@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "releases": [
+    {
+      "tag_name": "v0.1.95",
+      "draft": false,
+      "prerelease": true,
+      "html_url": "https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.1.95",
+      "assets": [
+        {
+          "name": "VidSage-0.1.95-win11-x64-Setup.exe",
+          "state": "uploaded",
+          "browser_download_url": "https://github.com/Elviszhuoyu/VidSage-Releases/releases/download/v0.1.95/VidSage-0.1.95-win11-x64-Setup.exe",
+          "digest": "sha256:3dcee150300500a98eea1ddcb25954d3ec761a14e9bfff64fb18b4f5a2b60263",
+          "size": 951681172
+        }
+      ]
+    },
+    {
+      "tag_name": "v0.1.91",
+      "draft": false,
+      "prerelease": true,
+      "html_url": "https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.1.91",
+      "assets": [
+        {
+          "name": "VidSage-0.1.91-win11-x64-Setup.exe",
+          "state": "uploaded",
+          "browser_download_url": "https://github.com/Elviszhuoyu/VidSage-Releases/releases/download/v0.1.91/VidSage-0.1.91-win11-x64-Setup.exe",
+          "digest": "sha256:7856e757f7940be4d635f0eb64ef224ff655536805da543e2359bda5af5811c8",
+          "size": 951638074
+        }
+      ]
+    },
+    {
+      "tag_name": "v0.1.89",
+      "draft": false,
+      "prerelease": true,
+      "html_url": "https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.1.89",
+      "assets": [
+        {
+          "name": "VidSage-0.1.89-win11-x64-Setup.exe",
+          "state": "uploaded",
+          "browser_download_url": "https://github.com/Elviszhuoyu/VidSage-Releases/releases/download/v0.1.89/VidSage-0.1.89-win11-x64-Setup.exe",
+          "digest": "sha256:610907ecc52ee0304c35601b74c043eb603cafd6694515c682d31e83668bde0b",
+          "size": 951651721
+        }
+      ]
+    },
+    {
+      "tag_name": "v0.1.80",
+      "draft": false,
+      "prerelease": true,
+      "html_url": "https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.1.80",
+      "assets": [
+        {
+          "name": "VidSage-0.1.80-win11-x64-Setup.exe",
+          "state": "uploaded",
+          "browser_download_url": "https://github.com/Elviszhuoyu/VidSage-Releases/releases/download/v0.1.80/VidSage-0.1.80-win11-x64-Setup.exe",
+          "digest": "sha256:aa9d787103af26e4771dc499dbea0e17b485e61a8911440e64a5fc5e55b2a549",
+          "size": 951393454
+        }
+      ]
+    }
+  ]
+}
