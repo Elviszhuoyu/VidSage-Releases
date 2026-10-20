@@ -6,7 +6,7 @@
 
 <p align="center"><a href="docs/GETTING_STARTED.en.md">Get started</a> · <a href="docs/HARDWARE.en.md">Hardware & models</a> · <a href="docs/FEEDBACK.en.md">Report a problem</a> · <a href="docs/PRIVACY.md">Privacy</a></p>
 
-> **0.1.96: reliable in-app updates.** [Download](https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.1.96) · [Full features (Chinese)](docs/FEATURES.zh-CN.md). Checks once on normal startup, then lets you download and confirm installation inside the app. **If an older version cannot check for updates, run this installer manually once** to obtain the new update checker.
+> **0.1.96: reliable in-app updates.** [Download](https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.1.96) · [Full features (Chinese)](docs/FEATURES.zh-CN.md). Checks once on normal startup, then lets you download and confirm installation inside the app. **Users on 0.1.95 or earlier should run this installer once** to obtain the new update checker.
 
 The app currently has a **Simplified Chinese interface**. English documentation is available; an English interface is planned for a later version.
 
