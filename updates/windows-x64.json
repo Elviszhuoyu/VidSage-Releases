@@ -2,6 +2,22 @@
   "schema": 1,
   "releases": [
     {
+      "tag_name": "v0.1.96",
+      "draft": false,
+      "prerelease": true,
+      "html_url": "https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.1.96",
+      "assets": [
+        {
+          "name": "VidSage-0.1.96-win11-x64-Setup.exe",
+          "state": "uploaded",
+          "browser_download_url": "https://github.com/Elviszhuoyu/VidSage-Releases/releases/download/v0.1.96/VidSage-0.1.96-win11-x64-Setup.exe",
+          "digest": "sha256:a906e09bbbabf1de4c20703fef3bcf12824b7d36766c924bdee505e628db0b13",
+          "size": 951656961
+        }
+      ],
+      "licenseSha256": "b8575ff92ff9cbf07b12e4935f93afa6fd59b115c5619b6c41bbce33a6966aa1"
+    },
+    {
       "tag_name": "v0.1.95",
       "draft": false,
       "prerelease": true,
