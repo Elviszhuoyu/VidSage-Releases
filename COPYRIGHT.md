@@ -12,6 +12,12 @@ Copyright © 2026 Zhuoyu（卓雨）。保留所有未明确授予的权利。
 
 其他使用方式请事先取得作者的书面授权。可通过 [作者 GitHub 资料页](https://github.com/Elviszhuoyu)列出的公开联系方式提出申请；未收到答复不构成授权。
 
+## 上游继承与已有授权
+
+VidSage 早期版本实际基于次元饺子（moonjoin）的《B站省流助手－字幕AI摘要 Pro》v3.8.4（历史提交 b4d263de4c29cc24e1ac18b734ee4796dcab3d16）持续迭代；Windows 版保留并修改了部分 Markdown 报告渲染代码及默认提示词。上游原版权行 **Copyright (c) 2026 小白用户** 及完整 MIT 许可、免责声明见 [LICENSE.txt](licenses/upstream/moonjoin/LICENSE.txt)；具体继承说明见 [NOTICE.md](licenses/upstream/moonjoin/NOTICE.md)。随包位置为 licenses/upstream/moonjoin/。
+
+本声明仅约束作者有权独立授权且未另行有效授权的原创部分，不把上游内容改为保留权利，不撤回此前已有效授予的许可。当前衍生 UserScript 已有的 MIT 标记继续保留；这不把整个 Windows 产品改为 MIT。5.0.23 仅为横向参考，不是引入基线。本声明不表示上游参与、认可或对 VidSage 背书。
+
 ## English
 
 Copyright © 2026 Zhuoyu（卓雨）. All rights not expressly granted are reserved.
@@ -25,6 +31,10 @@ Users may download, install, and run officially released test builds free of cha
 Third-party components, including modifications that remain governed by third-party licenses, retain their respective licenses and copyright notices. This notice does not alter, restrict, or replace rights or obligations under applicable licenses, including GPL, LGPL, and MPL. See the accompanying THIRD-PARTY-NOTICES.txt, dependency-inventory.json, and licenses/ directory.
 
 Obtain the author’s prior written permission for other uses. Requests may be sent through public contact details listed on the [author’s GitHub profile](https://github.com/Elviszhuoyu). Silence does not constitute permission.
+
+The early VidSage baseline is moonjoin's v3.8.4, commit b4d263de4c29cc24e1ac18b734ee4796dcab3d16. The Windows edition retains and modifies portions of its Markdown report renderer and default prompts. Preserve **Copyright (c) 2026 小白用户** and the full MIT permission/disclaimer in licenses/upstream/moonjoin/LICENSE.txt. Script author: 次元饺子 (moonjoin). v5.0.23 is a comparison reference only. No upstream participation or endorsement is implied.
+
+These terms cover only original work the author can independently license and has not already validly licensed otherwise. They do not restrict upstream MIT rights or withdraw an existing valid grant. The derived UserScript's existing MIT marker is retained; it does not license the entire Windows product under MIT.
 
 ## 平台与第三方条款 / Reference terms
 

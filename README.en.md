@@ -99,6 +99,8 @@ These codes are also available in **关于 → 支持作者 (About → Support t
 
 ## Use and permissions
 
+VidSage is independently maintained by Zhuoyu. Portions of its code and default prompts are adapted from the [open-source project by moonjoin](https://github.com/moonjoin/tampermonkey-scripts), used under MIT. See the full [license](licenses/upstream/moonjoin/LICENSE.txt) and [source notice](licenses/upstream/moonjoin/NOTICE.md).
+
 **Rights in original code are reserved; further development requires the author's prior written permission.** Officially released test builds may be evaluated free of charge. Application source and development history remain private. GitHub platform rights and third-party licenses apply separately. See the [use and copyright notice](COPYRIGHT.md).
 
 Recognition, translation, and analysis can be wrong, especially with names and numbers. Check important details against the video, and use only content you are entitled to access and process.

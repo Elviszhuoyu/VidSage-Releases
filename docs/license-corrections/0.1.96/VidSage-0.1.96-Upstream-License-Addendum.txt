@@ -1,0 +1,46 @@
+VidSage 0.1.96 上游许可补充 / Upstream license addendum
+
+0.1.96 随包声明遗漏了下述实际继承来源与完整 MIT 声明。本附件补充该声明，不替换旧安装包，也不改变其既有 SHA256。已经存在的第三方许可及有效授权继续适用。
+
+The 0.1.96 distribution omitted this specific upstream attribution and full MIT notice. This attachment supplies that notice without replacing the installer or changing its recorded SHA256. Existing third-party licenses and valid grants remain in effect.
+
+Original Setup SHA256: a906e09bbbabf1de4c20703fef3bcf12824b7d36766c924bdee505e628db0b13
+
+# 上游来源与许可 / Upstream attribution
+
+VidSage 脉络由 Zhuoyu 独立维护，其早期版本基于次元饺子（moonjoin）发布的《B站省流助手－字幕AI摘要 Pro》v3.8.4 持续迭代。Windows 版保留并修改了其中部分 Markdown 报告渲染代码及默认提示词，相关上游内容按 MIT 许可证使用。桌面界面、本地播放、语音识别、资料管理及更新等能力由本项目持续开发维护。
+
+上游仓库：https://github.com/moonjoin/tampermonkey-scripts
+引入基线：v3.8.4，历史提交 b4d263de4c29cc24e1ac18b734ee4796dcab3d16。
+脚本作者：次元饺子（moonjoin）。上游许可证原版权行：Copyright (c) 2026 小白用户。
+完整 MIT 许可及免责声明见同目录 LICENSE.txt；该版权行与许可原文保持不变。
+
+本声明说明实际继承关系，不声称次元饺子是全部底层代码的唯一原创者，也不表示上游参与、认可或为 VidSage 背书。5.0.23 仅供横向溯源参考，不是 VidSage 的实际引入基线。自有原创部分的条款不改变上游 MIT 权利，也不撤回已有有效授权。
+
+VidSage is independently maintained by Zhuoyu. Its early versions were developed from “B站省流助手－字幕AI摘要 Pro” v3.8.4 by 次元饺子 (moonjoin). The Windows edition retains and modifies portions of its Markdown report renderer and default prompts under MIT. The desktop interface, local playback, speech recognition, data management and updates continue to be developed and maintained by VidSage.
+
+Baseline: v3.8.4, commit b4d263de4c29cc24e1ac18b734ee4796dcab3d16.
+Script author: 次元饺子 (moonjoin). Original upstream copyright: Copyright (c) 2026 小白用户.
+See LICENSE.txt for the unchanged MIT permission and disclaimer. v5.0.23 is a comparison reference only. This attribution does not claim that one author originated every underlying component or imply upstream participation, endorsement or approval. Terms for original VidSage work do not restrict upstream MIT rights or withdraw any existing valid license grant.
+
+MIT License
+
+Copyright (c) 2026 小白用户
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
