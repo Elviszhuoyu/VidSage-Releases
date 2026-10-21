@@ -99,6 +99,8 @@ Gemini API 免费层可能受到模型、地区、请求频率和每日额度限
 
 ## 使用与授权
 
+VidSage 由 Zhuoyu 独立维护，部分代码及默认提示词沿用并修改自次元饺子（moonjoin）的[开源项目](https://github.com/moonjoin/tampermonkey-scripts)，按 MIT 许可使用。完整版权、许可和来源说明见 [LICENSE.txt](licenses/upstream/moonjoin/LICENSE.txt) 与 [NOTICE.md](licenses/upstream/moonjoin/NOTICE.md)。
+
 **原创代码保留权利，二次开发须事先取得作者书面授权。** 正式发布的官方测试包可免费体验。应用源码和开发历史保持私有；GitHub 平台内权利及第三方许可证另行适用。详见[使用与版权声明](COPYRIGHT.md)。
 
 识别、翻译与分析可能出错，尤其是数字和专有名词。重要内容请回到原视频核对；仅处理你有权访问与使用的内容。

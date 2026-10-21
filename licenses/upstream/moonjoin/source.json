@@ -1,0 +1,32 @@
+{
+  "name": "B站省流助手－字幕AI摘要 Pro (moonjoin)",
+  "version": "3.8.4",
+  "author": "次元饺子（moonjoin）",
+  "copyright": "Copyright (c) 2026 小白用户",
+  "license": "MIT",
+  "source": "https://github.com/moonjoin/tampermonkey-scripts",
+  "introducedCommit": "b4d263de4c29cc24e1ac18b734ee4796dcab3d16",
+  "licenseSource": "https://github.com/moonjoin/tampermonkey-scripts/blob/b4d263de4c29cc24e1ac18b734ee4796dcab3d16/LICENSE",
+  "licenseSha256": "6c8f48b9f3ff82a372fe7e23979100f984070b6c140e565f9f35e68252359395",
+  "scope": "Early UserScript baseline; Windows retains and modifies portions of Markdown report rendering and default prompts. No upstream participation or endorsement is implied.",
+  "notices": [
+    "licenses/upstream/moonjoin/NOTICE.md",
+    "licenses/upstream/moonjoin/LICENSE.txt"
+  ],
+  "inheritedSourceFiles": [
+    "src/ui/report-renderer.js",
+    "src/analysis/prompt-presets.js",
+    "src/app/VidSage.main.js"
+  ],
+  "baselineFileSha256": "c185c085c2b08f9c14d1eac90bad85756ffb70603b96a5746cdad7eb0014c878",
+  "comparisonReference": {
+    "version": "5.0.23",
+    "role": "Comparison only, not development baseline",
+    "sha256": "28896da6049a96b92af7d04282102c26222d567d11022b175a0692bea1ae639c"
+  },
+  "scopedEarlierSourceCheck": {
+    "scope": "3.8.4 and current Markdown functions, default prompts and BiliRiskControlError; compared with 5.0.23 error classification reference",
+    "bpiRs": "https://github.com/Yuelioi/bpi-rs/blob/main/src/err/error.rs",
+    "finding": "The current BiliRiskControlError already exists in 3.8.4. The BiliApiError hierarchy and semantic classification cited in 5.0.23 were not found in this inherited path. No direct code dependency established in this scope; not a claim of complete originality."
+  }
+}
