@@ -2,6 +2,95 @@
   "schema": 1,
   "releases": [
     {
+      "tag_name": "v0.2.0",
+      "draft": false,
+      "prerelease": true,
+      "html_url": "https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.2.0",
+      "assets": [
+        {
+          "name": "VidSage-0.2.0-win11-x64-Setup.exe",
+          "state": "uploaded",
+          "browser_download_url": "https://github.com/Elviszhuoyu/VidSage-Releases/releases/download/v0.2.0/VidSage-0.2.0-win11-x64-Setup.exe",
+          "digest": "sha256:eefd69d4b9ca5e8bbf19f616e3b217d9595cedb75b39a203256db3ceaacc2a3e",
+          "size": 951875293
+        },
+        {
+          "url": "https://api.github.com/repos/Elviszhuoyu/VidSage-Releases/releases/assets/666161597",
+          "id": 666161597,
+          "node_id": "RA_kwDOVORpl84ntNG9",
+          "name": "VidSage-0.2.0-content.json",
+          "label": "",
+          "uploader": {
+            "login": "Elviszhuoyu",
+            "id": 58328711,
+            "node_id": "MDQ6VXNlcjU4MzI4NzEx",
+            "avatar_url": "https://avatars.githubusercontent.com/u/58328711?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/Elviszhuoyu",
+            "html_url": "https://github.com/Elviszhuoyu",
+            "followers_url": "https://api.github.com/users/Elviszhuoyu/followers",
+            "following_url": "https://api.github.com/users/Elviszhuoyu/following{/other_user}",
+            "gists_url": "https://api.github.com/users/Elviszhuoyu/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/Elviszhuoyu/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/Elviszhuoyu/subscriptions",
+            "organizations_url": "https://api.github.com/users/Elviszhuoyu/orgs",
+            "repos_url": "https://api.github.com/users/Elviszhuoyu/repos",
+            "events_url": "https://api.github.com/users/Elviszhuoyu/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/Elviszhuoyu/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "content_type": "application/json",
+          "state": "uploaded",
+          "size": 1775237,
+          "digest": "sha256:6a4a0eeadc71a614926ef696455ec1c9d31697a7fca877e10e922a5e11a44e4d",
+          "download_count": 0,
+          "created_at": "2026-10-22T14:50:58Z",
+          "updated_at": "2026-10-22T14:51:14Z",
+          "browser_download_url": "https://github.com/Elviszhuoyu/VidSage-Releases/releases/download/v0.2.0/VidSage-0.2.0-content.json"
+        },
+        {
+          "url": "https://api.github.com/repos/Elviszhuoyu/VidSage-Releases/releases/assets/666145996",
+          "id": 666145996,
+          "node_id": "RA_kwDOVORpl84ntJTM",
+          "name": "VidSage-0.2.0-win11-x64-Content-Setup.exe",
+          "label": "",
+          "uploader": {
+            "login": "Elviszhuoyu",
+            "id": 58328711,
+            "node_id": "MDQ6VXNlcjU4MzI4NzEx",
+            "avatar_url": "https://avatars.githubusercontent.com/u/58328711?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/Elviszhuoyu",
+            "html_url": "https://github.com/Elviszhuoyu",
+            "followers_url": "https://api.github.com/users/Elviszhuoyu/followers",
+            "following_url": "https://api.github.com/users/Elviszhuoyu/following{/other_user}",
+            "gists_url": "https://api.github.com/users/Elviszhuoyu/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/Elviszhuoyu/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/Elviszhuoyu/subscriptions",
+            "organizations_url": "https://api.github.com/users/Elviszhuoyu/orgs",
+            "repos_url": "https://api.github.com/users/Elviszhuoyu/repos",
+            "events_url": "https://api.github.com/users/Elviszhuoyu/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/Elviszhuoyu/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "content_type": "application/x-msdownload",
+          "state": "uploaded",
+          "size": 3870639,
+          "digest": "sha256:4dcbf0e93c851464204eeb29a3c62e364e99a33fc51cbda1815a00b5539c89bd",
+          "download_count": 0,
+          "created_at": "2026-10-22T14:44:18Z",
+          "updated_at": "2026-10-22T14:44:43Z",
+          "browser_download_url": "https://github.com/Elviszhuoyu/VidSage-Releases/releases/download/v0.2.0/VidSage-0.2.0-win11-x64-Content-Setup.exe"
+        }
+      ],
+      "licenseSha256": "990bc0b182ad4dfcc284bb0706eb2a568e943cb52318ba217a876f0015e7ee4d",
+      "contentReady": true
+    },
+    {
       "tag_name": "v0.1.96",
       "draft": false,
       "prerelease": true,
@@ -14,8 +103,7 @@
           "digest": "sha256:a906e09bbbabf1de4c20703fef3bcf12824b7d36766c924bdee505e628db0b13",
           "size": 951656961
         }
-      ],
-      "licenseSha256": "b8575ff92ff9cbf07b12e4935f93afa6fd59b115c5619b6c41bbce33a6966aa1"
+      ]
     },
     {
       "tag_name": "v0.1.95",
