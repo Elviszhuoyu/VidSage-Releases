@@ -2,21 +2,27 @@
 <h1 align="center">VidSage</h1>
 <p align="center"><strong>Watch, understand, and return to the source.</strong><br>A local-first Windows AI video player with Whisper transcription, video summaries, timestamped Q&A and notes.</p>
 <p align="center"><a href="README.md"><strong>简体中文</strong></a> · <strong>English</strong></p>
-<p align="center"><img src="docs/assets/release/windows.svg" alt="Windows 11 x64"> <img src="docs/assets/release/languages.svg" alt="中文界面 · English docs"> <img src="docs/assets/release/preview.svg" alt="0.1.96 Preview"></p>
+<p align="center"><img src="docs/assets/release/windows.svg" alt="Windows 11 x64"> <img src="docs/assets/release/languages.svg" alt="中文界面 · English docs"> <img src="docs/assets/release/preview.svg" alt="0.2.0 Preview"></p>
 
 <p align="center"><a href="docs/GETTING_STARTED.en.md">Get started</a> · <a href="docs/HARDWARE.en.md">Hardware & models</a> · <a href="docs/FEEDBACK.en.md">Report a problem</a> · <a href="docs/PRIVACY.md">Privacy</a></p>
 
-> **0.1.96: reliable in-app updates.** [Download](https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.1.96) · [Full features (Chinese)](docs/FEATURES.zh-CN.md). Checks once on normal startup, then lets you download and confirm installation inside the app. **Users on 0.1.95 or earlier should run this installer once** to obtain the new update checker.
 
 The app currently has a **Simplified Chinese interface**. English documentation is available; an English interface is planned for a later version.
 
-## Keep the video, questions and notes together
+> **0.2.0 public preview.** [Full installer](https://github.com/Elviszhuoyu/VidSage-Releases/releases/download/v0.2.0/VidSage-0.2.0-win11-x64-Setup.exe) · [Release notes](docs/RELEASE_0.2.0.md#english) · [Downloads and mirrors](docs/DOWNLOADS.md#english)
 
-- Ask about a line, a chapter or the whole video, then return to the timestamped source.
-- Choose from seven report styles, from a quick overview to detailed reasoning and practical steps. Ask follow-up questions about a saved report.
-- Transcribe locally with Whisper, correct captions, compare original and translated text, and keep timestamped notes in a searchable library.
-- Use private playback for a separate queue and sign-in environment, with temporary session data cleared on exit.
-- When an AI request fails, keep watching the original and decide when to retry or which service to use.
+## One place to watch, understand and keep what matters
+
+- Ask about a caption, chapter or whole video, then jump to the original timestamp.
+- Choose from seven analysis modes for narrated courses, tutorials and everyday videos, beyond finance alone.
+- Use platform captions, import SRT/VTT, or transcribe locally with the bundled base model; correct, translate and export caption tracks.
+- Keep timestamped notes, analysis and Q&A in a searchable local library.
+- Choose ChatGPT subscription authorization, supported APIs or compatible local services. Confirm the cloud processing scope yourself.
+- Use an independent private session for temporary viewing.
+
+0.2.0 adds per-model usage and CNY estimates, activity charts, bounded public comment analysis, Chinese/English UI, quality choices and playback statistics. Long-video processing has less repeated input and visible progress; model readiness and sidebar dragging are clearer. Compatible content updates reuse verified installed files.
+
+A local 112-minute sample improved from about 7m34s to 4m24s with about 17% fewer input tokens. Speed and usage vary. This is a public preview; check important caption and AI results against the original video.
 
 ## Why I built VidSage
 
@@ -26,7 +32,7 @@ AI helped me break difficult concepts into smaller pieces, ask for another expla
 
 That is where VidSage began. I hope it makes learning a little easier for you, too.
 
-![VidSage 0.1.96 ordinary playback and private entry beside the playlist](docs/assets/release/home-0.1.96.png)
+![Ordinary playback and private entry (interface example)](docs/assets/release/home-0.1.96.png)
 
 ## Private playback for temporary viewing
 
@@ -34,7 +40,7 @@ Start from the hat-and-glasses icon beside the playlist heading. Your ordinary q
 
 Subtitles, analysis, questions, and temporary notes stay within that session, outside ordinary history and the knowledge library. Exiting ends the session process and clears temporary data before returning to ordinary playback. A graphite interface and soft transition identify the mode; reduced-motion settings are respected.
 
-![Actual VidSage 0.1.96 private playback interface](docs/assets/release/private-0.1.96.png)
+![Private playback (interface example)](docs/assets/release/private-0.1.96.png)
 
 Private playback may write to a dedicated temporary directory. It does not guarantee forensic erasure or network anonymity. Online platforms and cloud AI services retain their own data practices. See [Privacy](docs/PRIVACY.md).
 
@@ -105,6 +111,6 @@ VidSage is independently maintained by Zhuoyu. Portions of its code and default 
 
 Recognition, translation, and analysis can be wrong, especially with names and numbers. Check important details against the video, and use only content you are entitled to access and process.
 
-## Development workspace
+## Project and feedback
 
-Read [AGENTS.md](AGENTS.md), the [architecture contract](docs/ARCHITECTURE_CONTRACT.md), and the [current task](docs/CURRENT_TASK.md) before development. Public product information and future downloads are maintained separately in [VidSage-Releases](https://github.com/Elviszhuoyu/VidSage-Releases).
+Application source and development history remain private. This repository provides official installers, guides and [issue reporting](https://github.com/Elviszhuoyu/VidSage-Releases/issues).

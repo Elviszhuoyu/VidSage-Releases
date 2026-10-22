@@ -1,6 +1,6 @@
 # 隐私说明 / Privacy
 
-适用范围：本轮无痕播放候选（正式版本以安装包为准） · 更新于 2026-10-19
+适用范围：VidSage 0.2.0 Windows公开测试版 · 更新于 2026-10-22
 
 ## 本地资料与云服务
 
@@ -11,6 +11,14 @@ VidSage 默认在本机保存播放记录、字幕、笔记和分析结果。本
 全片提问还会参考当前同一字幕版本的 AI 报告及最近问答，包括 AI 补充内容；这些上下文随问题发送给所选服务，只用于理解讨论，不作为视频原文证据。当前片段或选段提问不附整篇报告。
 
 ChatGPT 登录连接 OpenAI 云端服务；API 是另一种接入方式，两者的额度和费用分别由服务商决定。VidSage 不读取你的 Codex 登录文件或 ChatGPT 历史对话。
+
+## 用量记录与公开评论 / Usage and public comments
+
+用量页记录VidSage实际请求的任务类型、服务/模型、时间、状态与服务返回的Token统计，不写字幕、评论正文、提示词、回答、媒体标题或账号凭据；没有返回用量的请求标为未知。普通汇总不含无痕会话，无痕用量只在本次内存中保留。费用是估算，不是服务商账单。
+
+评论入口只按需读取当前B站视频的有限公开顶层样本；采集本身不发送给AI。确认后，将样本、问题及本次讨论上下文发送给所选服务。采集时间、范围与引用可查看；不将少量评论当全体观众或视频事实。
+
+Usage records contain technical task/provider/model identifiers, timestamps, outcomes and available token counts, without prompt, response, caption/comment bodies, media titles or credentials. Private-session usage is held in memory and excluded from normal totals. Cost estimates are not provider invoices. Public comment samples are sent to the chosen model only after confirmation, with relevant questions and discussion context.
 
 ## 无痕播放
 
