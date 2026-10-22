@@ -6,7 +6,7 @@ VidSage 是把视频、字幕、AI分析、问答和笔记放在一起的Windows
 
 普通用户只需下载 **[VidSage-0.2.0-win11-x64-Setup.exe](https://github.com/Elviszhuoyu/VidSage-Releases/releases/download/v0.2.0/VidSage-0.2.0-win11-x64-Setup.exe)**（约952MB）。这是完整安装包，包含播放器、本地字幕运行库和base模型，无需开发环境。
 
-Windows 11 x64；处理器需支持AVX2。安装和临时解压建议预留至少6GB。首次安装或从0.1.96及更早版本升级，均使用这个完整Setup；升级保留资料和模型。安装包未签名。
+Windows 11 x64；处理器需支持x86-64-v3（含AVX2）。安装和临时解压建议预留至少6GB。首次安装或从0.1.96及更早版本升级，均使用这个完整Setup；升级保留资料和模型。安装包未签名。
 
 ## 新增
 
@@ -52,4 +52,4 @@ VidSage 0.2.0 brings video, captions, AI analysis, questions and notes into one 
 - Long transcripts use up to two cloud sections in flight, less repeated input and visible processing status. One local 112-minute sample improved from about 7m34s to 4m24s with about 17% fewer input tokens; results vary.
 - Model readiness, charts, dark icons, sidebar dragging, caption selection and interrupted-generation recovery are clearer and more reliable.
 
-Windows 11 x64 with AVX2; reserve at least 6GB. Unsigned public preview. Captions, translations and AI results may be wrong; check important points in the original video.
+Windows 11 x64 with an x86-64-v3 CPU (including AVX2); reserve at least 6GB. Unsigned public preview. Captions, translations and AI results may be wrong; check important points in the original video.
