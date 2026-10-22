@@ -2,19 +2,28 @@
 <h1 align="center">VidSage 脉络</h1>
 <p align="center"><strong>看视频，也理清思路。</strong><br>本地优先的 Windows AI 视频学习播放器：字幕转写、视频总结、时间戳问答与笔记。</p>
 <p align="center"><strong>简体中文</strong> · <a href="README.en.md"><strong>English</strong></a></p>
-<p align="center"><img src="docs/assets/release/windows.svg" alt="Windows 11 x64"> <img src="docs/assets/release/languages.svg" alt="中文界面 · English docs"> <img src="docs/assets/release/preview.svg" alt="0.1.96 Preview"></p>
+<p align="center"><img src="docs/assets/release/windows.svg" alt="Windows 11 x64"> <img src="docs/assets/release/languages.svg" alt="中文 / English"> <img src="docs/assets/release/preview.svg" alt="0.2.0 Preview"></p>
 
 <p align="center"><a href="docs/GETTING_STARTED.zh-CN.md">开始使用</a> · <a href="docs/HARDWARE.zh-CN.md">硬件与模型</a> · <a href="docs/FEEDBACK.zh-CN.md">反馈问题</a> · <a href="docs/PRIVACY.md">隐私与授权</a></p>
 
-> **0.1.96 应用内更新修复版。** [下载安装包](https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.1.96) · [完整功能](docs/FEATURES.zh-CN.md)。正常启动自动检查，发现新版后可在软件内下载并确认安装。**0.1.95及更早版本建议先手动安装本版一次**，之后不必每次去GitHub找包。
+> **0.2.0 公开测试版。** [下载完整安装包](https://github.com/Elviszhuoyu/VidSage-Releases/releases/download/v0.2.0/VidSage-0.2.0-win11-x64-Setup.exe) · [本次更新](docs/RELEASE_0.2.0.md) · [下载与分流](docs/DOWNLOADS.md) · [完整功能](docs/FEATURES.zh-CN.md)
 
-## 不用在视频、AI 和笔记之间来回切换
+## 视频、字幕和思路，放在同一个地方
 
-- **一句没听懂，就从这一句问。** 选中字幕、指定章节或围绕全片提问，回答附有可回看的原文时间。
-- **长视频不只压成几行摘要。** 七种分析方式分别照顾速读、推理、课程、财经和动手实践，已有报告可以继续追问。
-- **字幕和资料留在自己手里。** 本地生成字幕、校正、双语对照、时间笔记和知识库检索放在同一个播放器里。
-- **临时观看有独立的空间。** 无痕播放使用单独的队列和登录环境，退出后清理本次资料，不混进日常记录。
-- **AI 暂时用不了，也不打断观看。** 保留原文和已有成果，自己决定什么时候重试、用哪个服务。
+- **边看边问，回答能回到原片。** 围绕当前片段、选中字幕、章节或全片提问，点击引用时间核对原话。
+- **不同内容，选择不同整理方式。** 省流、时间轴、长文复盘、详细、财经复盘、知识拆解和行动清单，适合课程、教程和各类带解说视频；不限于金融或专业课程。
+- **字幕先在本机准备。** 可用平台字幕、导入SRT/VTT，或使用随包base模型本地识别；支持校正、翻译、双语和轨道导出。
+- **把看过的内容留下来。** 时间笔记、分析和问答资料可保存到本地知识库，继续搜索、阅读与回看。
+- **按自己的方式接入AI。** ChatGPT订阅、已支持的API或兼容本机服务可分别用于分析和翻译；云端发送范围由你确认。
+- **临时观看有独立空间。** 无痕播放使用独立队列和账号环境，退出清理本次资料，不混进日常记录。
+
+## 0.2.0 更新重点
+
+长视频分析减少重复输入，分段并行并显示真实处理进度；新增公开评论总结与追问、人民币费用看板、活动图表、中英界面、清晰度选择和播放统计。字幕模型的文件与运行环境分开展示，两侧拖栏和原生视频指针交互修复，后续兼容更新可复用已有程序文件。
+
+本机112分钟课程样本从约7分34秒缩短至约4分24秒，输入Token较旧记录少约17%。这是一组样本观察，实际耗时和用量会变化。
+
+当前为公开测试版；识别、翻译与AI结果可能出错，请回看原视频核对。
 
 ## 为什么做 VidSage
 
@@ -24,7 +33,7 @@
 
 这就是我做 VidSage 的起点。也希望它能让你的学习过程轻松一点。
 
-![VidSage 0.1.96 普通播放，播放列表旁的无痕入口](docs/assets/release/home-0.1.96.png)
+![普通播放与无痕入口（界面示例）](docs/assets/release/home-0.1.96.png)
 
 ## 无痕播放：临时观看，退出后清理
 
@@ -32,7 +41,7 @@
 
 字幕、分析、问答与临时笔记仅供本次会话使用，不加入普通历史或知识库。退出后先结束会话进程并清理临时数据，再恢复普通播放。石墨灰界面与柔和过渡帮助辨认当前模式，减少动态效果设置也会生效。
 
-![VidSage 0.1.96 无痕播放的实际界面](docs/assets/release/private-0.1.96.png)
+![无痕播放（界面示例）](docs/assets/release/private-0.1.96.png)
 
 无痕模式仍可能写入专用临时目录，不提供磁盘取证不可恢复或网络匿名保证；在线平台及云端 AI 仍按各自规则处理数据。详见[隐私说明](docs/PRIVACY.md)。
 
@@ -68,7 +77,7 @@
 
 从[官方下载页](https://github.com/Elviszhuoyu/VidSage-Releases/releases)获取完整 Setup；需要时可核对随页提供的 SHA256。首版未签名，Windows 可能显示未知发布者或安全提示；部分设备策略可能阻止运行。请先核对下载来源，遇到不明或恶意软件提示时停止安装，不要关闭系统防护。
 
-标准包包含播放器、核心、本地字幕运行库和 base 模型，无需开发环境；千问运行环境及其模型另行选择。新版本可在「关于」中检查、下载完整 Setup 并确认安装；从旧版首次升级也可以直接下载运行 Setup。升级保留个人资料及模型。卸载时可分别选择清理缓存、默认目录模型及个人资料，默认保留；自定义目录和外部导出文件保留。已修复卸载后仅有 Python 缓存残留导致原位置无法重装的问题。
+标准包包含播放器、核心、本地字幕运行库和 base 模型，无需开发环境；千问运行环境及其模型另行选择。新版本可在「关于」中检查、下载并确认安装；从0.1.96及更早版本首次升级使用完整Setup，之后兼容内容更新可复用已有文件。升级保留个人资料及模型。卸载时可分别选择清理缓存、默认目录模型及个人资料，默认保留；自定义目录和外部导出文件保留。已修复卸载后仅有 Python 缓存残留导致原位置无法重装的问题。
 
 [安装、校验与开始使用 →](docs/GETTING_STARTED.zh-CN.md)
 
@@ -105,6 +114,6 @@ VidSage 由 Zhuoyu 独立维护，部分代码及默认提示词沿用并修改�
 
 识别、翻译与分析可能出错，尤其是数字和专有名词。重要内容请回到原视频核对；仅处理你有权访问与使用的内容。
 
-## 开发工作区
+## 项目与反馈
 
-开发前阅读 [AGENTS.md](AGENTS.md)、[架构合同](docs/ARCHITECTURE_CONTRACT.md)和[当前任务](docs/CURRENT_TASK.md)。公开介绍和后续下载位于 [VidSage-Releases](https://github.com/Elviszhuoyu/VidSage-Releases)。
+应用源码与开发历史保持私有；本仓库提供官方安装包、使用说明与[问题反馈](https://github.com/Elviszhuoyu/VidSage-Releases/issues)。

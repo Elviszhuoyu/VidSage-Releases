@@ -45,6 +45,10 @@ Optional Bilibili sign-in provides access to media and subtitles your account ma
 
 Local caption generation needs no additional AI account. Larger models download only when you select them. See [system requirements and models](HARDWARE.en.md).
 
+## Analysis and usage in 0.2.0
+
+Analysis shows elapsed time and section/receiving status. Open Usage and cost from Learning or AI Service to see recorded requests, tokens and estimates, in CNY by default. Subscription usage is separate from API charges. Downloaded model weights alone do not mean its runtime is ready. Use the full Setup.exe for installation; Content-Setup is an update component.
+
 ## Settings
 
 | Category | Options |
