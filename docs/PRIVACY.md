@@ -1,6 +1,6 @@
 # 隐私说明 / Privacy
 
-适用范围：VidSage 0.2.0 Windows公开测试版 · 更新于 2026-10-22
+适用范围：0.2.1 的播放与 AI 功能（以实际安装包为准） · 更新于 2026-10-23
 
 ## 本地资料与云服务
 
@@ -12,13 +12,15 @@ VidSage 默认在本机保存播放记录、字幕、笔记和分析结果。本
 
 ChatGPT 登录连接 OpenAI 云端服务；API 是另一种接入方式，两者的额度和费用分别由服务商决定。VidSage 不读取你的 Codex 登录文件或 ChatGPT 历史对话。
 
-## 用量记录与公开评论 / Usage and public comments
+## 报告生图
 
-用量页记录VidSage实际请求的任务类型、服务/模型、时间、状态与服务返回的Token统计，不写字幕、评论正文、提示词、回答、媒体标题或账号凭据；没有返回用量的请求标为未知。普通汇总不含无痕会话，无痕用量只在本次内存中保留。费用是估算，不是服务商账单。
+「导出报告长图」只在本机排版已有报告，不调用 AI，也不向服务商发送内容。你主动保存到外部目录的文件由你自行保管。
 
-评论入口只按需读取当前B站视频的有限公开顶层样本；采集本身不发送给AI。确认后，将样本、问题及本次讨论上下文发送给所选服务。采集时间、范围与引用可查看；不将少量评论当全体观众或视频事实。
+AI 生图使用单独配置的官方 OpenAI 或 Gemini API。确认授权后，只发送当前报告或选中文字及排版说明，不附整段字幕、原视频、笔记或账号资料。可复用已有官方 API 密钥；ChatGPT 订阅登录不用于生图。密钥在本机加密保存。
 
-Usage records contain technical task/provider/model identifiers, timestamps, outcomes and available token counts, without prompt, response, caption/comment bodies, media titles or credentials. Private-session usage is held in memory and excluded from normal totals. Cost estimates are not provider invoices. Public comment samples are sent to the chosen model only after confirmation, with relevant questions and discussion context.
+生成的配图与原报告文字在本地排版保存。图片、来源文字和版本信息属于个人资料，清理缓存不会删除；删除原报告时默认保留图片，可另行选择同时删除。取消等待或网络超时不能保证服务端停止处理或不计费，软件不会自动重试或更换服务。
+
+无痕会话内生图需要单独同意，退出后清理本次图片与临时文件；主动复制到剪贴板或另存到外部文件夹的图片会保留，执行前会提示。
 
 ## 无痕播放
 
@@ -26,11 +28,17 @@ Usage records contain technical task/provider/model identifiers, timestamps, out
 
 处理过程中可能在专用临时目录写入字幕、缓存和结果，并非全程只使用内存。这些文件不加密，退出会话时清理；异常中断后，应用会在下次启动时清理已结束会话的残留。清理失败会明确提示。不要把这一功能视为磁盘取证不可恢复的保证。
 
-本次字幕和结果仅供当前会话使用，首版不提供导出或加密保存。普通资料和原始媒体保留。平台登录单独隔离；ChatGPT 需要在无痕会话内单独登录，云端处理同意也只适用于本次会话。
+本次字幕和分析结果仅供当前会话使用。AI 图片可主动复制或另存；外部副本不随会话清理。普通资料和原始媒体保留。平台登录单独隔离；ChatGPT 需要在无痕会话内单独登录，云端处理同意也只适用于本次会话。
 
 无痕播放不提供网络匿名，也不能清理操作系统、浏览器、在线平台或外部模型服务保存的记录。使用云端 AI 前仍须确认数据发送和费用；在系统浏览器中打开报告链接时会另行提醒。
 
 切换动画会在内存中短暂合成当前 VidSage 窗口与视频画面，不捕获其他应用，不写入截图文件或诊断记录；过渡结束、窗口移动或失焦后即释放。关闭无痕窗口后，软件先等待进程结束并清理专用临时目录，再提示清理完成。清理过程不应抢回已切换到其他应用的焦点。
+
+## 评论与用量记录
+
+评论采集只请求当前 B站视频的公开顶层样本，不发送你的平台 Cookie，不采集评论账号资料；打开入口或读取样本不会调用模型。确认后发送样本、问题和同一样本内必要的近期讨论给所选模型服务。评论样本与回答只保留在本次会话，重新采集成功后替换。
+
+普通模式在本机记录请求类型、服务与模型、结果状态、耗时及服务返回的 Token 用量，用于汇总与费用估算。账本不保存字幕、评论、问题、Prompt、模型回答、密钥或播放地址。价格是你填写的本地估算配置，不连接服务商账单。无痕用量仅保留在当前会话内存中，退出后清理，不进入普通账本。
 
 ## 账号信息
 
@@ -50,9 +58,9 @@ API 密钥和登录令牌使用 Windows 当前用户的加密机制保护。账�
 
 ## 更新检查
 
-打开「关于」时，软件会访问本项目的公开 GitHub 发布渠道检查更新，版本旁也可手动检查。请求不附带安装编号、诊断、账号、媒体或字幕内容。GitHub 会接收到 IP 地址等正常网络请求信息。
+正常启动自动检查一次更新；打开「关于」或手动检查时，软件也会访问本项目的公开 GitHub 发布渠道。请求不附带安装编号、诊断、账号、媒体或字幕内容。GitHub 会接收到 IP 地址等正常网络请求信息。
 
-你决定是否下载完整安装包，校验完成后另行确认退出并安装。无痕播放中不提供下载或安装更新。
+你决定是否下载内容更新或完整安装包，校验完成后另行确认退出并安装。可复用文件只在本机读取和核对，不上传。无痕播放中不提供下载或安装更新。
 
 ## 使用提醒
 
@@ -60,7 +68,7 @@ API 密钥和登录令牌使用 Windows 当前用户的加密机制保护。账�
 
 ## English
 
-This statement applies to the private playback candidate described above and was updated on 2026-10-19.
+This statement applies to playback and AI features in the 0.2.0 candidate and was updated on 2026-10-21.
 
 ### Local data and cloud services
 
@@ -84,6 +92,12 @@ Private playback does not provide network anonymity or clear records held by the
 
 Transition animations briefly composite the current VidSage window and video picture in memory. They do not capture other applications or write screenshot files or diagnostic records. The picture is released when the transition ends, the window moves, or focus is lost. Cleanup completion is reported after the private process ends and its dedicated temporary directory is removed. Cleanup does not reclaim focus from another application.
 
+### Comments and usage records
+
+Comment sampling requests only the current Bilibili video's public top-level samples, without your platform cookies or commenter account details. Opening the view and reading samples do not call a model. After confirmation, the selected service receives the sample, question and necessary recent discussion of the same sample. Samples and answers remain only for this session and are replaced after a successful refresh.
+
+Normal mode keeps a local ledger of request type, service and model, outcome, duration and token usage returned by the provider. It does not store subtitles, comments, questions, prompts, model answers, keys or playback URLs. Prices are local estimates you enter, separate from provider billing. Private usage stays in session memory, clears on exit and never enters the ordinary ledger.
+
 ### Account information
 
 API keys and login tokens use the current Windows user's encryption facilities. Necessary account identifiers and email addresses stay locally to display accounts and restore sign-in.
@@ -102,9 +116,9 @@ A randomly generated installation identifier helps relate reports you submit. It
 
 ### Update checks
 
-Opening **关于 (About)** checks this project's public GitHub release channel; a manual check is also available beside the version. The request does not include installation identifiers, diagnostics, accounts, media, or subtitles. GitHub receives normal network request information, including your IP address.
+Normal startup checks the project's public GitHub release channel once. About and the manual check use the same channel. The request does not include installation identifiers, diagnostics, accounts, media, or subtitles. GitHub receives normal network request information, including your IP address.
 
-You choose whether to download the full installer, then separately confirm closing the app and installing it after verification. Downloading and installing updates are unavailable during private playback.
+You choose whether to download a content update or full installer, then separately confirm closing the app and installing it after verification. Reusable files are read and verified locally; they are not uploaded. Downloading and installing updates are unavailable during private playback.
 
 ### Use
 

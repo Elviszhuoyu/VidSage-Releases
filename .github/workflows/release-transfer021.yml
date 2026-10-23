@@ -1,0 +1,18 @@
+name: Transfer exact 0.2.1 release assets
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: release-transfer-0.2.1
+  cancel-in-progress: false
+jobs:
+  transfer:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify and transfer existing release bytes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 tools/release_transfer021.py
