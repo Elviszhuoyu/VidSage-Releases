@@ -2,14 +2,14 @@
 <h1 align="center">VidSage</h1>
 <p align="center"><strong>Watch, understand, and return to the source.</strong><br>A local-first Windows AI video player with Whisper transcription, video summaries, timestamped Q&A and notes.</p>
 <p align="center"><a href="README.md"><strong>简体中文</strong></a> · <strong>English</strong></p>
-<p align="center"><img src="docs/assets/release/windows.svg" alt="Windows 11 x64"> <img src="docs/assets/release/languages.svg" alt="中文界面 · English docs"> <img src="docs/assets/release/preview.svg" alt="0.2.0 Preview"></p>
+<p align="center"><img src="docs/assets/release/windows.svg" alt="Windows 11 x64"> <img src="docs/assets/release/languages.svg" alt="中文界面 · English docs"> <img src="docs/assets/release/preview.svg" alt="0.2.1 Preview"></p>
 
 <p align="center"><a href="docs/GETTING_STARTED.en.md">Get started</a> · <a href="docs/HARDWARE.en.md">Hardware & models</a> · <a href="docs/FEEDBACK.en.md">Report a problem</a> · <a href="docs/PRIVACY.md">Privacy</a></p>
 
 
 The app currently has a **Simplified Chinese interface**. English documentation is available; an English interface is planned for a later version.
 
-> **0.2.0 public preview.** [Full installer](https://github.com/Elviszhuoyu/VidSage-Releases/releases/download/v0.2.0/VidSage-0.2.0-win11-x64-Setup.exe) · [Release notes](docs/RELEASE_0.2.0.md#english) · [Downloads and mirrors](docs/DOWNLOADS.md#english)
+> **0.2.1 public preview.** [Full installer](https://github.com/Elviszhuoyu/VidSage-Releases/releases/download/v0.2.1/VidSage-0.2.1-win11-x64-Setup.exe) · [Release notes](docs/RELEASE_0.2.1.md#english) · [Downloads and mirrors](docs/DOWNLOADS.md#english)
 
 ## One place to watch, understand and keep what matters
 
@@ -20,7 +20,7 @@ The app currently has a **Simplified Chinese interface**. English documentation 
 - Choose ChatGPT subscription authorization, supported APIs or compatible local services. Confirm the cloud processing scope yourself.
 - Use an independent private session for temporary viewing.
 
-0.2.0 adds per-model usage and CNY estimates, activity charts, bounded public comment analysis, Chinese/English UI, quality choices and playback statistics. Long-video processing has less repeated input and visible progress; model readiness and sidebar dragging are clearer. Compatible content updates reuse verified installed files.
+0.2.1 adds per-model usage and CNY estimates, activity charts, bounded public comment analysis, Chinese/English UI, quality choices and playback statistics. Long-video processing has less repeated input and visible progress; model readiness and sidebar dragging are clearer. Compatible content updates reuse verified installed files.
 
 A local 112-minute sample improved from about 7m34s to 4m24s with about 17% fewer input tokens. Speed and usage vary. This is a public preview; check important caption and AI results against the original video.
 

@@ -2,11 +2,11 @@
 <h1 align="center">VidSage 脉络</h1>
 <p align="center"><strong>看视频，也理清思路。</strong><br>本地优先的 Windows AI 视频学习播放器：字幕转写、视频总结、时间戳问答与笔记。</p>
 <p align="center"><strong>简体中文</strong> · <a href="README.en.md"><strong>English</strong></a></p>
-<p align="center"><img src="docs/assets/release/windows.svg" alt="Windows 11 x64"> <img src="docs/assets/release/languages.svg" alt="中文 / English"> <img src="docs/assets/release/preview.svg" alt="0.2.0 Preview"></p>
+<p align="center"><img src="docs/assets/release/windows.svg" alt="Windows 11 x64"> <img src="docs/assets/release/languages.svg" alt="中文 / English"> <img src="docs/assets/release/preview.svg" alt="0.2.1 Preview"></p>
 
 <p align="center"><a href="docs/GETTING_STARTED.zh-CN.md">开始使用</a> · <a href="docs/HARDWARE.zh-CN.md">硬件与模型</a> · <a href="docs/FEEDBACK.zh-CN.md">反馈问题</a> · <a href="docs/PRIVACY.md">隐私与授权</a></p>
 
-> **0.2.0 公开测试版。** [下载完整安装包](https://github.com/Elviszhuoyu/VidSage-Releases/releases/download/v0.2.0/VidSage-0.2.0-win11-x64-Setup.exe) · [本次更新](docs/RELEASE_0.2.0.md) · [下载与分流](docs/DOWNLOADS.md) · [完整功能](docs/FEATURES.zh-CN.md)
+> **0.2.1 公开测试版。** [下载完整安装包](https://github.com/Elviszhuoyu/VidSage-Releases/releases/download/v0.2.1/VidSage-0.2.1-win11-x64-Setup.exe) · [本次更新](docs/RELEASE_0.2.1.md) · [下载与分流](docs/DOWNLOADS.md) · [完整功能](docs/FEATURES.zh-CN.md)
 
 ## 视频、字幕和思路，放在同一个地方
 
@@ -17,13 +17,11 @@
 - **按自己的方式接入AI。** ChatGPT订阅、已支持的API或兼容本机服务可分别用于分析和翻译；云端发送范围由你确认。
 - **临时观看有独立空间。** 无痕播放使用独立队列和账号环境，退出清理本次资料，不混进日常记录。
 
-## 0.2.0 更新重点
+## 0.2.1 更新重点
 
-长视频分析减少重复输入，分段并行并显示真实处理进度；新增公开评论总结与追问、人民币费用看板、活动图表、中英界面、清晰度选择和播放统计。字幕模型的文件与运行环境分开展示，两侧拖栏和原生视频指针交互修复，后续兼容更新可复用已有程序文件。
+改善播放切换、播放列表和在线封面的响应，新增报告生图与图片管理，并支持不调用 AI 的免费报告长图导出。生图设置集中管理，补齐等待、取消、失败恢复和图片查看反馈，优化中英界面与不同系统缩放下的交互。
 
-本机112分钟课程样本从约7分34秒缩短至约4分24秒，输入Token较旧记录少约17%。这是一组样本观察，实际耗时和用量会变化。
-
-当前为公开测试版；识别、翻译与AI结果可能出错，请回看原视频核对。
+当前为公开测试版；识别、翻译与 AI 结果可能出错，请回看原视频核对。
 
 ## 为什么做 VidSage
 
