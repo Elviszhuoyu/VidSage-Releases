@@ -2,23 +2,23 @@
   "schema": 1,
   "releases": [
     {
-      "tag_name": "v0.2.0",
+      "tag_name": "v0.2.1",
       "draft": false,
       "prerelease": true,
-      "html_url": "https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.2.0",
+      "html_url": "https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.2.1",
       "assets": [
         {
-          "name": "VidSage-0.2.0-win11-x64-Setup.exe",
+          "name": "VidSage-0.2.1-win11-x64-Setup.exe",
           "state": "uploaded",
-          "browser_download_url": "https://github.com/Elviszhuoyu/VidSage-Releases/releases/download/v0.2.0/VidSage-0.2.0-win11-x64-Setup.exe",
-          "digest": "sha256:eefd69d4b9ca5e8bbf19f616e3b217d9595cedb75b39a203256db3ceaacc2a3e",
-          "size": 951875293
+          "browser_download_url": "https://github.com/Elviszhuoyu/VidSage-Releases/releases/download/v0.2.1/VidSage-0.2.1-win11-x64-Setup.exe",
+          "digest": "sha256:9cec357ca385a536b3f7b38976df8e9e12916851dad36bd62ca5a4333c3d5d44",
+          "size": 951948155
         },
         {
-          "url": "https://api.github.com/repos/Elviszhuoyu/VidSage-Releases/releases/assets/666161597",
-          "id": 666161597,
-          "node_id": "RA_kwDOVORpl84ntNG9",
-          "name": "VidSage-0.2.0-content.json",
+          "url": "https://api.github.com/repos/Elviszhuoyu/VidSage-Releases/releases/assets/669442565",
+          "id": 669442565,
+          "node_id": "RA_kwDOVORpl84n5uIF",
+          "name": "VidSage-0.2.1-content.json",
           "label": "",
           "uploader": {
             "login": "Elviszhuoyu",
@@ -43,18 +43,18 @@
           },
           "content_type": "application/json",
           "state": "uploaded",
-          "size": 1775237,
-          "digest": "sha256:6a4a0eeadc71a614926ef696455ec1c9d31697a7fca877e10e922a5e11a44e4d",
+          "size": 1777232,
+          "digest": "sha256:411ae5ea22061e33b82223f83371714374ceafe80c7f8a01ef3c7e44f859bd5e",
           "download_count": 0,
-          "created_at": "2026-10-22T14:50:58Z",
-          "updated_at": "2026-10-22T14:51:14Z",
-          "browser_download_url": "https://github.com/Elviszhuoyu/VidSage-Releases/releases/download/v0.2.0/VidSage-0.2.0-content.json"
+          "created_at": "2026-10-23T14:52:15Z",
+          "updated_at": "2026-10-23T14:52:19Z",
+          "browser_download_url": "https://github.com/Elviszhuoyu/VidSage-Releases/releases/download/v0.2.1/VidSage-0.2.1-content.json"
         },
         {
-          "url": "https://api.github.com/repos/Elviszhuoyu/VidSage-Releases/releases/assets/666145996",
-          "id": 666145996,
-          "node_id": "RA_kwDOVORpl84ntJTM",
-          "name": "VidSage-0.2.0-win11-x64-Content-Setup.exe",
+          "url": "https://api.github.com/repos/Elviszhuoyu/VidSage-Releases/releases/assets/669443178",
+          "id": 669443178,
+          "node_id": "RA_kwDOVORpl84n5uRq",
+          "name": "VidSage-0.2.1-win11-x64-Content-Setup.exe",
           "label": "",
           "uploader": {
             "login": "Elviszhuoyu",
@@ -79,16 +79,31 @@
           },
           "content_type": "application/x-msdownload",
           "state": "uploaded",
-          "size": 3870639,
-          "digest": "sha256:4dcbf0e93c851464204eeb29a3c62e364e99a33fc51cbda1815a00b5539c89bd",
+          "size": 3871182,
+          "digest": "sha256:9da01feee3d98b396c9b81a2998d88c404987b58642bdeb6d41eed20023c187d",
           "download_count": 0,
-          "created_at": "2026-10-22T14:44:18Z",
-          "updated_at": "2026-10-22T14:44:43Z",
-          "browser_download_url": "https://github.com/Elviszhuoyu/VidSage-Releases/releases/download/v0.2.0/VidSage-0.2.0-win11-x64-Content-Setup.exe"
+          "created_at": "2026-10-23T14:52:25Z",
+          "updated_at": "2026-10-23T14:52:29Z",
+          "browser_download_url": "https://github.com/Elviszhuoyu/VidSage-Releases/releases/download/v0.2.1/VidSage-0.2.1-win11-x64-Content-Setup.exe"
         }
       ],
       "licenseSha256": "990bc0b182ad4dfcc284bb0706eb2a568e943cb52318ba217a876f0015e7ee4d",
       "contentReady": true
+    },
+    {
+      "tag_name": "v0.2.0",
+      "draft": false,
+      "prerelease": true,
+      "html_url": "https://github.com/Elviszhuoyu/VidSage-Releases/releases/tag/v0.2.0",
+      "assets": [
+        {
+          "name": "VidSage-0.2.0-win11-x64-Setup.exe",
+          "state": "uploaded",
+          "browser_download_url": "https://github.com/Elviszhuoyu/VidSage-Releases/releases/download/v0.2.0/VidSage-0.2.0-win11-x64-Setup.exe",
+          "digest": "sha256:eefd69d4b9ca5e8bbf19f616e3b217d9595cedb75b39a203256db3ceaacc2a3e",
+          "size": 951875293
+        }
+      ]
     },
     {
       "tag_name": "v0.1.96",
