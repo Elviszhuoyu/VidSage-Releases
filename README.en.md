@@ -2,12 +2,12 @@
 <h1 align="center">VidSage</h1>
 <p align="center"><strong>Watch, understand, and return to the source.</strong><br>A local-first Windows AI video player with Whisper transcription, video summaries, timestamped Q&A and notes.</p>
 <p align="center"><a href="README.md"><strong>简体中文</strong></a> · <strong>English</strong></p>
-<p align="center"><img src="docs/assets/release/windows.svg" alt="Windows 11 x64"> <img src="docs/assets/release/languages.svg" alt="中文界面 · English docs"> <img src="docs/assets/release/preview.svg" alt="0.2.1 Preview"></p>
+<p align="center"><img src="docs/assets/release/windows.svg" alt="Windows 11 x64"> <img src="docs/assets/release/languages.svg" alt="Chinese / English"> <img src="docs/assets/release/preview.svg" alt="0.2.1 Preview"></p>
 
 <p align="center"><a href="docs/GETTING_STARTED.en.md">Get started</a> · <a href="docs/HARDWARE.en.md">Hardware & models</a> · <a href="docs/FEEDBACK.en.md">Report a problem</a> · <a href="docs/PRIVACY.md">Privacy</a></p>
 
 
-The app currently has a **Simplified Chinese interface**. English documentation is available; an English interface is planned for a later version.
+The app provides **Simplified Chinese and English interfaces**. Switch the interface language in Settings → Player. Caption and AI output languages are configured separately.
 
 > **0.2.1 public preview.** [Full installer](https://github.com/Elviszhuoyu/VidSage-Releases/releases/download/v0.2.1/VidSage-0.2.1-win11-x64-Setup.exe) · [Release notes](docs/RELEASE_0.2.1.md#english) · [Downloads and mirrors](docs/DOWNLOADS.md#english)
 
