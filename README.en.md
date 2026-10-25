@@ -1,8 +1,10 @@
 <p align="center"><img src="docs/assets/release/app-icon.svg" width="64" height="64" alt="VidSage"></p>
-<h1 align="center">VidSage</h1>
+<h1 align="center">VidSage 脉络</h1>
 <p align="center"><strong>Watch, understand, and return to the source.</strong><br>A local-first Windows AI video player with Whisper transcription, video summaries, timestamped Q&A and notes.</p>
 <p align="center"><a href="README.md"><strong>简体中文</strong></a> · <strong>English</strong></p>
 <p align="center"><img src="docs/assets/release/windows.svg" alt="Windows 11 x64"> <img src="docs/assets/release/languages.svg" alt="Chinese / English"> <img src="docs/assets/release/preview.svg" alt="0.2.1 Preview"></p>
+
+<p align="center"><a href="https://tools.zhuoyulabs.com/vidsage">VidSage 脉络 · Official website</a> · <a href="https://tools.zhuoyulabs.com/vidsage/download">Downloads &amp; updates</a> · <a href="https://tools.zhuoyulabs.com/vidsage/contact">Contact the author</a></p>
 
 <p align="center"><a href="docs/GETTING_STARTED.en.md">Get started</a> · <a href="docs/HARDWARE.en.md">Hardware & models</a> · <a href="docs/FEEDBACK.en.md">Report a problem</a> · <a href="docs/PRIVACY.md">Privacy</a></p>
 

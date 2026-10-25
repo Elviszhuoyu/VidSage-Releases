@@ -4,6 +4,8 @@
 <p align="center"><strong>简体中文</strong> · <a href="README.en.md"><strong>English</strong></a></p>
 <p align="center"><img src="docs/assets/release/windows.svg" alt="Windows 11 x64"> <img src="docs/assets/release/languages.svg" alt="中文 / English"> <img src="docs/assets/release/preview.svg" alt="0.2.1 Preview"></p>
 
+<p align="center"><a href="https://tools.zhuoyulabs.com/vidsage">VidSage 脉络官网</a> · <a href="https://tools.zhuoyulabs.com/vidsage/download">下载与更新</a> · <a href="https://tools.zhuoyulabs.com/vidsage/contact">联系作者</a></p>
+
 <p align="center"><a href="docs/GETTING_STARTED.zh-CN.md">开始使用</a> · <a href="docs/HARDWARE.zh-CN.md">硬件与模型</a> · <a href="docs/FEEDBACK.zh-CN.md">反馈问题</a> · <a href="docs/PRIVACY.md">隐私与授权</a></p>
 
 > **0.2.1 公开测试版。** [下载完整安装包](https://github.com/Elviszhuoyu/VidSage-Releases/releases/download/v0.2.1/VidSage-0.2.1-win11-x64-Setup.exe) · [本次更新](docs/RELEASE_0.2.1.md) · [下载与分流](docs/DOWNLOADS.md) · [完整功能](docs/FEATURES.zh-CN.md)
